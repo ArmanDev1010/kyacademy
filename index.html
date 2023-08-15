@@ -1,0 +1,3090 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KY Academy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"
+      defer
+    ></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Belanosima:wght@400;600&family=Caprasimo&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=EB+Garamond:wght@500;600;700;800&family=Libre+Baskerville:wght@700&family=Montserrat:wght@200;400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <img src="images/logo.png" alt="logo" />
+        <ul id="pages">
+          <a href="./aboutus/about.html"><li>About us</li></a>
+          <a href="#courses"><li>Courses</li></a>
+          <a href="#footer"><li>Contact Us</li></a>
+          <li class="dropdown language">
+            <div class="select">
+              <img src="" alt="" class="select_img" />
+              <span class="selected"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-chevron-down"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#222"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 9l6 6l6 -6" />
+              </svg>
+            </div>
+            <ul class="menu">
+              <li data-lan="am">Հայ</li>
+              <li data-lan="en">Eng</li>
+              <li data-lan="ru">Рус</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="menu_box">
+          <button class="menu_btn">
+            <div class="ham_bx">
+              <div class="ham_bx_inn"></div>
+            </div>
+          </button>
+          <div class="menu_section">
+            <div class="menu_inn">
+              <ul class="lists_2" id="lists">
+                <a href="./aboutus/about.html"
+                  ><li class="list hover_glow">About us</li></a
+                >
+                <a href="#courses"><li class="list hover_glow">Courses</li></a>
+                <a href="#footer"
+                  ><li class="list hover_glow">Contact Us</li></a
+                >
+                <a
+                  href="https://docs.google.com/forms/d/1Loel3gJYvCAL_JleywViv52isz2DybooCYw0Y2TX0I0/viewform?edit_requested=true"
+                  ><li><button>Register</button></li></a
+                >
+              </ul>
+            </div>
+            <li class="dropdown language">
+              <div class="select">
+                <img src="" alt="" class="select_img" />
+                <span class="selected"></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-chevron-down"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#222"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M6 9l6 6l6 -6" />
+                </svg>
+              </div>
+              <ul class="menu">
+                <li data-lan="am">Հայ</li>
+                <li data-lan="en">Eng</li>
+                <li data-lan="ru">Рус</li>
+              </ul>
+            </li>
+            <li id="second_li">
+              <ul id="socials-mobile">
+                <a
+                  href="https://www.facebook.com/kyacademyerevan"
+                  target="_blank"
+                >
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-brand-facebook"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                      />
+                    </svg>
+                  </li>
+                </a>
+                <a
+                  href="https://www.instagram.com/kidpreneurs_school/"
+                  target="_blank"
+                >
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-brand-instagram"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                      />
+                      <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path d="M16.5 7.5l0 .01" />
+                    </svg>
+                  </li>
+                </a>
+                <a
+                  href="https://www.youtube.com/@kidpreneursschool"
+                  target="_blank"
+                >
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-brand-youtube"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
+                      />
+                      <path d="M10 9l5 3l-5 3z" />
+                    </svg>
+                  </li>
+                </a>
+              </ul>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-phone"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#000"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+                  />
+                </svg>
+                <span>+374 55 500533</span>
+              </p>
+            </li>
+          </div>
+        </div>
+        <a
+          href="https://docs.google.com/forms/d/1Loel3gJYvCAL_JleywViv52isz2DybooCYw0Y2TX0I0/viewform?edit_requested=true"
+          ><button>Register</button></a
+        >
+      </nav>
+      <main>
+        <div class="main">
+          <div class="left">
+            <p>About Us</p>
+            <h2>
+              We are the top<br />
+              <span style="color: #f4c900">Learning Platform. </span>
+            </h2>
+            <p>Business school for children and teenagers (10-18)</p>
+            <div class="btns">
+              <a
+                href="https://docs.google.com/forms/d/1Loel3gJYvCAL_JleywViv52isz2DybooCYw0Y2TX0I0/viewform?edit_requested=true"
+              >
+                <button>Register Now</button>
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/1Loel3gJYvCAL_JleywViv52isz2DybooCYw0Y2TX0I0/viewform?edit_requested=true"
+              >
+                <button>Learn More</button>
+              </a>
+            </div>
+            <img src="images/Frame 211.png" alt="" />
+          </div>
+          <div class="right">
+            <img src="images/Frame 20.png" alt="" />
+          </div>
+        </div>
+      </main>
+      <section id="out">
+        <div class="inner">
+          <div class="left">
+            <h2>
+              Learner Outcomes <br />
+              On KY Academy
+            </h2>
+            <p>Its never too early</p>
+            <div id="students">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <p>
+                <span style="font-weight: 700">+ 1000k</span> Happy Students
+              </p>
+            </div>
+            <a
+              href="https://docs.google.com/forms/d/1Loel3gJYvCAL_JleywViv52isz2DybooCYw0Y2TX0I0/viewform?edit_requested=true"
+            >
+              <button>Join for free</button>
+            </a>
+          </div>
+          <div class="right">
+            <section id="testimonials" class="testi first_testi">
+              <div class="container">
+                <div class="testmonial_slider_area owl-carousel">
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      Thanks to KY Academy School. Wonderful school, wonderful
+                      teachers, program, approach..... Everything is of such a
+                      high level and quality that you don't even know what else
+                      to say. While attending, the children learned so many
+                      interesting things that even many, many adults wouldn't
+                      mind knowing. In short, we recommend it to everyone.
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p1.jpeg" alt="" />
+                      </div>
+                      <h5>Margarita Khojoyan</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      As a result of studying at KY Academy for two years, my
+                      child was able to establish his own business, earned money
+                      for the first time, and also initiated an important
+                      educational program. Thank you very much to the staff of
+                      the school and I definitely recommend the school if you
+                      want your child to acquire really useful knowledge and
+                      skills that will be a companion throughout life. Special
+                      thanks to Lilit Vatoyan, founder of the school, for her
+                      dedicated and professional work. It's never too early
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p2.jpeg" alt="" />
+                      </div>
+                      <h5>Gayane Movsesyan</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      Without a doubt, I recommend to everyone that children
+                      visit this wonderful school, where they will get not only
+                      financial literacy, but also become more flexible in their
+                      mind in any matter, get acquainted with the activities of
+                      large organizations, and participate in many interesting
+                      courses. Thanks to the school
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p3.jpeg" alt="" />
+                      </div>
+                      <h5>Lusine Arshakyan</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      I definitely recommend to attend KY Academy school, in a
+                      short time they teach such skills as it is impossible to
+                      learn neither at school, nor on the street, nor at home,
+                      children get financial knowledge from an early age, learn
+                      to work in a team, and know success many secrets to
+                      achieve.
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p4.jpeg" alt="" />
+                      </div>
+                      <h5>Alla Grigoryan</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      I am continually impressed by this school.From the
+                      earliest age the school encourages the kids to take on
+                      public speaking roles bu t always in a nurturing
+                      environment that allows them to develop confidence in
+                      their own abilities.A big thanks to all the teachers for
+                      their patience and the knowledge.
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p5.jpeg" alt="" />
+                      </div>
+                      <h5>Covik Gulumyan</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      We really appreciate the work that Kidspreneurs business
+                      school has done towards improving our daughter’s mindset,
+                      making her learn everything that they don’t teach in
+                      regular schools. Besides teaching business they also
+                      taught her about the values that every person must have
+                      ,self confidence, time management.My daughter is learning
+                      in this school for more than 2 years and the result is so
+                      obvious she became more responsible, she is able to think
+                      outside of the box, she manages her time, she started her
+                      own project...
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p6.jpeg" alt="" />
+                      </div>
+                      <h5>Vania Movsesyan</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="testimonials" class="testi second_testi">
+              <div class="container">
+                <div class="testmonial_slider_area owl-carousel">
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      Շնորհակալություն KY Academy School-ին։ Հրաշալի դպրոց,
+                      հիասքանչ ուսուցիչներ, ծրագիր, մոտեցում..... Ամեն ինչ նման
+                      ա բարձր մակարդակ ու որակ, որ չգիտես էլ ինչ to say
+                      Երեխաները հաճախելիս այնքան բան սովորեցին հետաքրքիր բաներ,
+                      որոնք նույնիսկ շատ ու շատ մեծահասակներ չէին անի մտքի
+                      իմացություն. Մի խոսքով, խորհուրդ ենք տալիս բոլորին
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p1.jpeg" alt="" />
+                      </div>
+                      <h5>Մարգարիտա Խոջոյան</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      KY Academy-ում երկու տարի սովորելու արդյունքում իմ երեխան
+                      կարողացավ հիմնել սեփական բիզնեսը, գումար վաստակեց առաջին
+                      անգամ, ինչպես նաև նախաձեռնեց կարևոր կրթական ծրագիր. Շատ
+                      շնորհակալ եմ անձնակազմին դպրոցը, և ես անպայման խորհուրդ եմ
+                      տալիս դպրոցը, եթե դուք ցանկանում եք, որ ձեր երեխան իսկապես
+                      օգտակար գիտելիքներ ձեռք բերի և հմտություններ, որոնք
+                      ուղեկից կլինեն ողջ կյանքի ընթացքում: Հատուկ
+                      շնորհակալություն դպրոցի հիմնադիր Լիլիթ Վաթոյանին իր համար
+                      նվիրված և պրոֆեսիոնալ աշխատանք։ Երբեք վաղ չէ
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p2.jpeg" alt="" />
+                      </div>
+                      <h5>Գայանե Մովսեսյան</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      Անկասկած, բոլորին խորհուրդ եմ տալիս, որ երեխաները այցելեք
+                      այս հրաշալի դպրոցը, որտեղ նրանք կստանան ոչ միայն
+                      ֆինանսական գրագիտությունը, այլև ավելի ճկուն դառնալ
+                      դրանցում միտքը ցանկացած հարցում, ծանոթանալ գործունեությանը
+                      խոշոր կազմակերպություններ, և մասնակցում են շատ հետաքրքիր
+                      դասընթացներ։ Դպրոցի շնորհիվ
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p3.jpeg" alt="" />
+                      </div>
+                      <h5>Լուսինե Արշակյան</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      Անպայման խորհուրդ եմ տալիս հաճախել մանկապարտեզների դպրոց,
+                      ա կարճ ժամանակում սովորեցնում են այնպիսի հմտություններ,
+                      որոնք անհնար է սովորիր ոչ դպրոցում, ոչ փողոցում, ոչ տանը,
+                      երեխաները փոքր տարիքից ստանում են ֆինանսական գիտելիքներ,
+                      սովորում աշխատել թիմում և իմանալ հաջողության շատ
+                      գաղտնիքներ հասնել
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p4.jpeg" alt="" />
+                      </div>
+                      <h5>Ալլա Գրիգորյան</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      Ես անընդհատ տպավորված եմ այս դպրոցով ամենավաղ տարիքը
+                      դպրոցը խրախուսում է երեխաներին ընդունել Հանրային խոսքի
+                      դերերը, բայց միշտ սնուցման մեջ են միջավայր, որը թույլ է
+                      տալիս նրանց վստահություն զարգացնել իրենց սեփական
+                      կարողությունները: Մեծ շնորհակալություն բոլոր ուսուցիչներին
+                      նրանց համբերությունն ու գիտելիքը:
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p5.jpeg" alt="" />
+                      </div>
+                      <h5>Ծովիկ Գուլումյան</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      Մենք իսկապես գնահատում ենք Kidspreneurs-ի բիզնեսը դպրոցն
+                      արել է մեր դստեր մտածելակերպը բարելավելու համար, ստիպելով
+                      նրան սովորել այն ամենը, ինչ նրանք չեն սովորեցնում
+                      սովորական դպրոցներ. Բացի բիզնես դասավանդելուց, նրանք նաև
+                      սովորեցրել է նրան այն արժեքների մասին, որոնք յուրաքանչյուր
+                      մարդ պետք է ունենա ,ինքնավստահություն, ժամանակի
+                      կառավարում։Աղջիկս սովորում է այս դպրոցում արդեն 2 տարուց
+                      ավելի ու արդյունքն այդպես է ակնհայտ է, որ նա դարձել է
+                      ավելի պատասխանատու, նա կարողանում է մտածել տուփից դուրս,
+                      նա տնօրինում է իր ժամանակը, նա սկսեց նրան սեփական
+                      նախագիծ...
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p6.jpeg" alt="" />
+                      </div>
+                      <h5>Վանիա Մովսեսյան</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="testimonials" class="testi third_testi">
+              <div class="container">
+                <div class="testmonial_slider_area owl-carousel">
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      Спасибо школе KY Academy. Замечательная школа,
+                      замечательная преподаватели,программа,подход.....Все
+                      такого высокий уровень и качество, что вы даже не знаете,
+                      что еще сказать За время посещения дети многому научились
+                      интересные вещи, которые даже многие, многие взрослые не
+                      стали бы ум знающий. Одним словом, всем рекомендуем
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p1.jpeg" alt="" />
+                      </div>
+                      <h5>Маргарита Ходжоян</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      В результате обучения в KY Academy в течение двух лет мои:
+                      ребенок смог наладить собственное дело, заработал деньги
+                      впервые, а также инициировал важное образовательная
+                      программа. Большое спасибо сотрудникам школу, и я
+                      определенно рекомендую школу, если вы хотите, чтобы ваш
+                      ребенок получил действительно полезные знания и: навыки,
+                      которые будут спутником на протяжении всей жизни.
+                      Особенный: спасибо Лилит Ватоян, основательнице школы, за
+                      ее самоотверженная и профессиональная работа. Никогда не
+                      бывает слишком рано
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p2.jpeg" alt="" />
+                      </div>
+                      <h5>Гаянэ Мовсесян</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      Без сомнения, я рекомендую всем детям посетить эту
+                      замечательную школу, где они получат не только финансовой
+                      грамотности, но и стать более гибкими в своих ума в любом
+                      вопросе, ознакомиться с деятельностью: крупных
+                      организаций, и участвовать во многих интересных курсы.
+                      Спасибо школе
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p3.jpeg" alt="" />
+                      </div>
+                      <h5>Лусине Аршакян</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      Я определенно рекомендую посещать школу детского
+                      предпринимательства в: короткое время учат таким навыкам,
+                      как невозможно учиться ни в школе, ни на улице, ни дома,
+                      дети с раннего возраста получают финансовые знания, учатся
+                      работать в команде и знать много секретов успеха
+                      достигать.
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p4.jpeg" alt="" />
+                      </div>
+                      <h5>Алла Григорян</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      Я постоянно под впечатлением от этой школы самый ранний
+                      возраст, в котором школа поощряет детей роли публичных
+                      выступлений, но всегда в воспитании среду, которая
+                      позволяет им развить уверенность в свои
+                      способности.Большое спасибо всем учителям за: Их терпение
+                      и знания.
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p5.jpeg" alt="" />
+                      </div>
+                      <h5>Цовик Гулумян</h5>
+                    </div>
+                  </div>
+                  <div class="box-area">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-star"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#f4c900"
+                          fill="#f4c900"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <p class="content">
+                      Мы очень ценим работу, которую делает бизнес Kidspreneurs
+                      школа сделала для улучшения мышления нашей дочери,
+                      заставить ее узнать все, чему они не учат в обычные школы.
+                      Помимо обучения бизнесу, они также: научил ее ценностям,
+                      которые должен иметь каждый человек , уверенность в себе,
+                      тайм-менеджмент Моя дочь учится в этой школе уже более 2-х
+                      лет и результат такой очевидно она стала более
+                      ответственной, она умеет думать нестандартно, она
+                      управляет своим временем, она начала собственный проект...
+                    </p>
+                    <div class="name_img">
+                      <div class="img-area">
+                        <img src="./images/parents/p6.jpeg" alt="" />
+                      </div>
+                      <h5>Ваня Мовсесян</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <ul class="bottom">
+          <li>
+            <img src="./images/personalized_learning_icon.png" alt="" />
+            <h3>Personalized Learning</h3>
+            <p>Each student receives an individual approach</p>
+          </li>
+          <li>
+            <img src="./images/trusted_content_icon.png" alt="" />
+            <h3>Professional team</h3>
+            <p>Courses and Experience Created by Certified Professionals</p>
+          </li>
+          <li>
+            <img src="./images/empower_teachers_icon.png" alt="" />
+            <h3>Professional training</h3>
+            <p>
+              Through KY Academy, professionals can fill their knowledge gaps
+              and meet educational needs
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="advantages">
+        <div class="right">
+          <img src="./images/Frame 36.png" alt="" />
+          <!-- <img id="its" src="./images/1transformed.png" alt="" /> -->
+        </div>
+        <div class="left">
+          <h2>
+            Ինչ արդյունք ենք<br />
+            ապահովում
+          </h2>
+          <ul>
+            <li>
+              <span class="number">1</span>
+              <div class="">
+                <h3>Գիտելիքներ որոնք չեն տրամադրվում դպրոցում</h3>
+                <p>հետաքրքիր բովանդակայուն և արդիական քեյսեր</p>
+              </div>
+            </li>
+            <li>
+              <span class="number">2</span>
+              <div class="">
+                <h3>ՄՈՏԻՎԱՑՎԱԾ ՄԻՋԱՎԱՅՐ</h3>
+                <p>մուտք դեպի ուսանողական և շրջանավարտական համայնք</p>
+              </div>
+            </li>
+            <li>
+              <span class="number">3</span>
+              <div class="">
+                <h3>Մասնագիտական կողմնորոշում</h3>
+                <p>օգնություն ճիշտ մասնագիտության ընտրության հարցում</p>
+              </div>
+            </li>
+            <li>
+              <span class="number">4</span>
+              <div class="">
+                <h3>Այցելություն կազմակերպություններ</h3>
+                <p>
+                  ոլորտի առաջատարների և առաջատար ընկերությունների մասին
+                  պատկերացում
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="number">5</span>
+              <div class="">
+                <h3>>Հանդիպում հյուրի հետ</h3>
+                <p>
+                  անհատական շփում ոլորտում կայացած մասնագետների և ձեռներեցների
+                  հետ
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="courses">
+        <div id="top_cor">
+          <h2>Our Courses</h2>
+          <p>If you register 2 or more students, there is a 20% discount</p>
+        </div>
+        <ul>
+          <a href="./courses/course/business.html">
+            <li data-course="business">
+              <div class="course_image_parent">
+                <div class="course_image"></div>
+              </div>
+              <h3>Your Business from 0</h3>
+              <p>
+                Learn a step-by-step process you can use to start your own
+                business from 0
+              </p>
+              <div id="bottom_cor_">
+                <div class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-star"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#f4c900"
+                    fill="#f4c900"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                    />
+                  </svg>
+                  <p>4.8</p>
+                  <span
+                    style="
+                      font-size: 18px;
+                      font-weight: 500;
+                      margin-left: 5px;
+                      margin-right: 5px;
+                      color: #a4a4a4;
+                    "
+                    >•</span
+                  >
+                  <div class="tutor">
+                    <div class="tutor_image"></div>
+                    <p>Arman Minasyan</p>
+                  </div>
+                </div>
+                <div class="pr">
+                  <p>
+                    <span style="font-size: 24px; font-weight: 700">35.</span
+                    >000 amd
+                  </p>
+                  <button>Learn More</button>
+                </div>
+              </div>
+              <div class="fade_"></div>
+              <div id="pop">MOST POPULAR</div>
+            </li>
+          </a>
+          <a href="./courses/course/rights.html">
+            <li data-course="rights">
+              <div class="course_image_parent">
+                <div class="course_image"></div>
+              </div>
+              <h3>Jurisprudence</h3>
+              <p>
+                Learn how to find and understand the law, know your rights and
+                to be protected
+              </p>
+              <div id="bottom_cor_">
+                <div class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-star"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#f4c900"
+                    fill="#f4c900"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                    />
+                  </svg>
+                  <p>4.9</p>
+                  <span
+                    style="
+                      font-size: 18px;
+                      font-weight: 500;
+                      margin-left: 5px;
+                      margin-right: 5px;
+                      color: #a4a4a4;
+                    "
+                    >•</span
+                  >
+                  <div class="tutor">
+                    <div class="tutor_image"></div>
+                    <p>Samvel Jabaxyan</p>
+                  </div>
+                </div>
+                <div class="pr">
+                  <p>
+                    <span style="font-size: 24px; font-weight: 700">32.</span
+                    >000 amd
+                  </p>
+                  <button>Learn More</button>
+                </div>
+              </div>
+              <div class="fade_"></div>
+            </li>
+          </a>
+          <a href="./courses/course/soft.html">
+            <li data-course="soft">
+              <div class="course_image_parent">
+                <div class="course_image"></div>
+              </div>
+              <h3>Soft Skills</h3>
+              <p>
+                Improve your soft skills (great communicator, leadership,
+                selling abilities, etc.)
+              </p>
+              <div id="bottom_cor_">
+                <div class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-star"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#f4c900"
+                    fill="#f4c900"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                    />
+                  </svg>
+                  <p>4.7</p>
+                  <span
+                    style="
+                      font-size: 18px;
+                      font-weight: 500;
+                      margin-left: 5px;
+                      margin-right: 5px;
+                      color: #a4a4a4;
+                    "
+                    >•</span
+                  >
+                  <div class="tutor">
+                    <div class="tutor_image"></div>
+                    <p>Garegin Xachatryan</p>
+                  </div>
+                </div>
+                <div class="pr">
+                  <p>
+                    <span style="font-size: 24px; font-weight: 700">29.</span
+                    >000 amd
+                  </p>
+                  <button>Learn More</button>
+                </div>
+              </div>
+              <div class="fade_"></div>
+            </li>
+          </a>
+          <a href="./courses/course/finance.html">
+            <li data-course="finance">
+              <div class="course_image_parent">
+                <div class="course_image"></div>
+              </div>
+              <h3>Happy Finances</h3>
+              <p>
+                Your complete guide to finance. Save more, invest smarter,
+                reduce loans, retire earlier
+              </p>
+              <div id="bottom_cor_">
+                <div class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-star"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#f4c900"
+                    fill="#f4c900"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                    />
+                  </svg>
+                  <p>4.8</p>
+                  <span
+                    style="
+                      font-size: 18px;
+                      font-weight: 500;
+                      margin-left: 5px;
+                      margin-right: 5px;
+                      color: #a4a4a4;
+                    "
+                    >•</span
+                  >
+                  <div class="tutor">
+                    <div class="tutor_image"></div>
+                    <p>Arman Minasyan</p>
+                  </div>
+                </div>
+                <div class="pr">
+                  <p>
+                    <span style="font-size: 24px; font-weight: 700">32.</span
+                    >000 amd
+                  </p>
+                  <button>Learn More</button>
+                </div>
+              </div>
+              <div class="fade_"></div>
+            </li>
+          </a>
+          <a href="./courses/course/marketing.html">
+            <li data-course="marketing">
+              <div class="course_image_parent">
+                <div class="course_image"></div>
+              </div>
+              <h3>Marketing</h3>
+              <p>
+                Best Digital Marketing Strategies, SEO, Email Marketing, YouTube
+                , Social Media Marketing
+              </p>
+              <div id="bottom_cor_">
+                <div class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-star"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#f4c900"
+                    fill="#f4c900"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                    />
+                  </svg>
+                  <p>4.6</p>
+                  <span
+                    style="
+                      font-size: 18px;
+                      font-weight: 500;
+                      margin-left: 5px;
+                      margin-right: 5px;
+                      color: #a4a4a4;
+                    "
+                    >•</span
+                  >
+                  <div class="tutor">
+                    <div class="tutor_image"></div>
+                    <p>Grisha Hovsepyan</p>
+                  </div>
+                </div>
+                <div class="pr">
+                  <p>
+                    <span style="font-size: 24px; font-weight: 700">26.</span
+                    >000 amd
+                  </p>
+                  <button>Learn More</button>
+                </div>
+              </div>
+              <div class="fade_"></div>
+            </li>
+          </a>
+          <a href="./courses/course/conflict.html">
+            <li data-course="argument">
+              <div class="course_image_parent">
+                <div class="course_image"></div>
+              </div>
+              <h3>Overcoming Conflicts</h3>
+              <p>
+                Effective techniques to better manage conflicts, negotiate,
+                influence and solve problems
+              </p>
+              <div id="bottom_cor_">
+                <div class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-star"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#f4c900"
+                    fill="#f4c900"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                    />
+                  </svg>
+                  <p>4.5</p>
+                  <span
+                    style="
+                      font-size: 18px;
+                      font-weight: 500;
+                      margin-left: 5px;
+                      margin-right: 5px;
+                      color: #a4a4a4;
+                    "
+                    >•</span
+                  >
+                  <div class="tutor">
+                    <div class="tutor_image"></div>
+                    <p>Anna Parsyan</p>
+                  </div>
+                </div>
+                <div class="pr">
+                  <p>
+                    <span style="font-size: 24px; font-weight: 700">29.</span
+                    >000 amd
+                  </p>
+                  <button>Learn More</button>
+                </div>
+              </div>
+              <div class="fade_"></div>
+            </li>
+          </a>
+          <a href="./courses/course/blogging.html">
+            <li data-course="argument">
+              <div class="course_image_parent">
+                <div class="course_image"></div>
+              </div>
+              <h3>Բլոգի արվեստը</h3>
+              <p>
+                Ունեցեք խոստումնալից, զարգացող բլոգ և հասկացեք, թե ինչպես կարող
+                եք դրա վրա գումար աշխատել
+              </p>
+              <div id="bottom_cor_">
+                <div class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-star"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#f4c900"
+                    fill="#f4c900"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                    />
+                  </svg>
+                  <p>4.6</p>
+                  <span
+                    style="
+                      font-size: 18px;
+                      font-weight: 500;
+                      margin-left: 5px;
+                      margin-right: 5px;
+                      color: #a4a4a4;
+                    "
+                    >•</span
+                  >
+                  <div class="tutor">
+                    <div class="tutor_image"></div>
+                    <p>Ekaterina Hakobyan</p>
+                  </div>
+                </div>
+                <div class="pr">
+                  <p>
+                    <span style="font-size: 24px; font-weight: 700">39.</span
+                    >000 amd
+                  </p>
+                  <button>Learn More</button>
+                </div>
+              </div>
+              <div class="fade_"></div>
+              <div id="pop">ՌՈՒՍԵՐԵՆՈՎ (ՆՈՐ)</div>
+            </li>
+          </a>
+        </ul>
+      </section>
+      <section id="ceo">
+        <div class="left">
+          <h2>Ինչի՞ց սկսվեց ամեն ինչ</h2>
+          <p>
+            Ամեն ինչ սկսվեց 2016 թվականի իմ այցելությամբ Մեծ Բալթյան երկրներ։
+            Փորձի փոխանակման ծրագրով մեկնեցի Լատվիա, Լիտվիա և Էստոնիա՝ տեղի
+            երիտասարդությանը ներկայացնելու Հայաստանը՝ այդ թվում մեր մշակույթը,
+            սովորությունները և կյանքը։ Վեց ամիսների ընթացքում շփվելով
+            երիտասարդների հետ և ծանոթանալով յուրաքանչյուր երկրի կրթական
+            համակարգերին հասկացա, որ մեծ ուշադրություն է դարձվում ոչ ֆորմալ
+            կրթությանը՝ հատկապես երեխաների և երիտասարդների մոտ ֆինանսական
+            գրագիտության մակարդակի բարձրացմանը։ Այնուհետև այցելեցի նաև Ֆինլադիա
+            և ուսումնասիրեցի ֆիների կրթական մոտեցումները։ Նրանք կիրառում էին
+            խաղաֆիկացված կրթական մեթոդներ ցանկացած տարիքի ուսանողների հետ
+            աշխատելիս, ինչը տալիս էր շատ բարձր արդյունքներ։ Եվ հենց այնտեղ
+            գաղափար առաջացավ արդեն Հայաստանում բացել դպրոց, որը մեր երեխաներին և
+            երիտասարդներին կտա հնարավորություն ձեռք բերել այնպիսի գիտելիքներ և
+            հմտություններ, որոնք, ցավոք, չեն տրամադրվում թե՛ հանրակրթական
+            դպրոցներում, թե՛ ոչ ֆորմալ ուսումնական հաստատություններում։
+            Վերադառնալով Հայաստան հավաքագրեցի միջազգային բիզնես դպրոցների
+            ուսումնական ծրագրերը, ուսումնասիրեցի հայկական ֆինանսական բոլոր
+            հարթակները, խորհրդակցեցի հոգեբանների և ոլորտում կայացած մասնագետների
+            հետ և մեկ տարի անց, 2019թ-ին, ստեղծվեց առաջին ուսումնական ծրագիրը։
+            KIDPRENEURS–ի առաջին ընդունելության ժամանակ ունեցանք ընդհամենը երկու
+            գրանցվող։ Հիասթափությունը բավականին մեծ էր, նույնիսկ մտածում էի, որ
+            սխալ որոշում եմ կայացրել և Հայաստանում չգնահատվեց նախաձեռնությունս։
+            Սակայն սկսածը պետք էր ավարտին հասցնել, և դասընթացը սկսեցինք
+            ընդհամենը երկու ուսանողով։ Ծրագրի ավարտին արդեն շատերն էին լսել մեր
+            մասին, և, երբ մտածում էի դադարի մասին, ստացա բազում զանգեր մեր
+            դասընթացին միանալու համար։ Եվ այդպես շարունակվեց մեր
+            գործունեությունը մինչ օրս։ Մենք արդեն ունենք ավելի քան 150
+            շրջանավարտ, ավելի քան 100 առկա ուսանող, ավելի քան 50 հաջողված բիզնես
+            նախագիծ և ավելի քան 50 գործընկեր ամբողջ Հայաստանում։ Դպրոցի
+            հիմնադրման պահին ես և՛ դասընթացավար էի, և՛ ֆինանսիստ, և՛ շուկայագետ,
+            և վաճառքի մասնագետ, և՛ հավաքարար, և՛․․․ իսկ այժմ մենք մի մեծ թիմ
+            ենք, մի մեծ ընտանիք, որն ունի միևնույն տեսլականը՝ տրամադրել մեր
+            երեխաներին և ուսանողներին 21-րդ դարում հաջողության հասնելու հնարավոր
+            բոլոր գիտելիքները և հմտությունները։ Երբեք շուտ չէ
+          </p>
+          <a href="./aboutus/about.html#ceo">
+            <button>Continue reading</button>
+          </a>
+        </div>
+        <img
+          id="lilit"
+          src="https://d35v9chtr4gec.cloudfront.net/kidpreneurs/1674479628444806133.jpeg"
+          alt=""
+        />
+        <img
+          id="prop"
+          src="https://assets.website-files.com/5837424ae11409586f837994/6297ec4b82aede5f3dfac579_eGroup%2049.svg"
+          alt=""
+        />
+      </section>
+      <section id="team">
+        <div class="left">
+          <h2>Meet our mentors</h2>
+          <p>
+            Ամենակարևոր երևույթը դպրոցում, ամենաուսուցողական առարկան,
+            ամենակենդանի օրինակը աշակերտի համար հենց ինքը ուսուցիչն է
+          </p>
+          <!-- <button>We're hiring!</button> -->
+        </div>
+        <ul>
+          <a href="https://www.linkedin.com/in/lilit-vatoyan/">
+            <li class="mentor">
+              <div class=""></div>
+              <div class="">
+                <h3>Lilit Vatoyan</h3>
+                <p>Բիզնես</p>
+              </div>
+            </li></a
+          >
+          <a href="https://www.linkedin.com/in/arman-minassian-253a93109/">
+            <li class="mentor">
+              <div class=""></div>
+              <div class="">
+                <h3>Arman Minasyan</h3>
+                <p>Ֆինանսներ</p>
+              </div>
+            </li></a
+          >
+          <a href="https://www.linkedin.com/in/samvel-jabaghyan-60b8a3183/">
+            <li class="mentor">
+              <div class=""></div>
+              <div class="">
+                <h3>Samvel Jabaghyan</h3>
+                <p>Իրավագիտություն</p>
+              </div>
+            </li>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/garegin-khachatryan-42591989/?fbclid=IwAR2iD4xWOdltgdUi7REgqDJSJs5giR69DXwTnzGp3m6KN4b3-_QwzMhBXMA"
+          >
+            <li class="mentor">
+              <div class=""></div>
+              <div class="">
+                <h3>Garegin Xachatryan</h3>
+                <p>Soft Skills</p>
+              </div>
+            </li></a
+          >
+          <a href="https://www.linkedin.com/in/grisha-hovsepyan/">
+            <li class="mentor">
+              <div class=""></div>
+              <div class="">
+                <h3>Grisha Hovsepyan</h3>
+                <p>Մարքեթինգ</p>
+              </div>
+            </li></a
+          >
+          <a href="https://www.linkedin.com/in/anna-parsyan-767535260/">
+            <li class="mentor">
+              <div class=""></div>
+              <div class="">
+                <h3>Anna Parsyan</h3>
+                <p>Մարքեթինգ</p>
+              </div>
+            </li></a
+          >
+        </ul>
+      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12188.132391174275!2d44.5310978!3d40.2083267!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa37cc08dd0b7%3A0x7c6f4bc122c4446f!2sKidpreneurs%20school!5e0!3m2!1sen!2sam!4v1691117729544!5m2!1sen!2sam"
+        width="100%"
+        height="250"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <footer id="footer">
+        <div class="">
+          <div id="top">
+            <div class="left">
+              <a href="./">
+                <img src="./images/logo.png" alt="" />
+              </a>
+            </div>
+            <ul id="foot_nav">
+              <a href="./aboutus/about.html"><li>About us</li></a>
+              <a href="#courses"><li>Courses</li></a>
+              <a href="#footer"><li>Contact Us</li></a>
+            </ul>
+            <div class="icons">
+              <a
+                href="https://www.facebook.com/kyacademyerevan"
+                target="_blank"
+              >
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-facebook"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                    />
+                  </svg>
+                </li>
+              </a>
+              <a
+                href="https://www.instagram.com/kidpreneurs_school/"
+                target="_blank"
+              >
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-instagram"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                    />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                  </svg>
+                </li>
+              </a>
+              <a
+                href="https://www.youtube.com/@kidpreneursschool"
+                target="_blank"
+              >
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-youtube"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
+                    />
+                    <path d="M10 9l5 3l-5 3z" />
+                  </svg>
+                </li>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/kidpreneurs-school/"
+                target="_blank"
+              >
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-linkedin"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                    />
+                    <path d="M8 11l0 5" />
+                    <path d="M8 8l0 .01" />
+                    <path d="M12 16l0 -5" />
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                  </svg>
+                </li>
+              </a>
+            </div>
+          </div>
+          <p>
+            <span> Copywright © 2023 KY Academy </span>
+            <span>developed by` @armandev10</span>
+          </p>
+        </div>
+      </footer>
+    </header>
+    <script src="app.js" defer></script>
+  </body>
+</html>
