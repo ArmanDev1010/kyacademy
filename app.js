@@ -237,7 +237,7 @@ const arm = {
   },
   footer: {
     nav: ["Մեր մասին", "Դասընթացներ", "Կապ"],
-    right: "© 2023, © «KY academy» ՍՊԸ |, Բոլոր իրավունքները պահպանված են",
+    right: "© 2023, © «KY academy» |, Բոլոր իրավունքները պահպանված են",
     developed:
       "Կայքի ձևավորումը՝ <span style='font-weight: bold;'>@armandev10</span>",
   },
@@ -363,7 +363,7 @@ const eng = {
   },
   footer: {
     nav: ["About us", "Courses", "Contact"],
-    right: "© 2023, © «KY academy» LLC, All rights reserved",
+    right: "© 2023, © «KY academy» , All rights reserved",
     developed:
       "developed by՝ <span style='font-weight: bold;'>@armandev10</span>",
   },
@@ -491,7 +491,7 @@ const rus = {
   },
   footer: {
     nav: ["О на", "Курсы", "Контакты"],
-    right: "© 2023, © 'KY academy' LLC, All rights reserved",
+    right: "© 2023, © 'KY academy' , All rights reserved",
     developed:
       "developed by՝ <span style='font-weight: bold;'>@armandev10</span>",
   },
