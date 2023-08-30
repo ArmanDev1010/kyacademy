@@ -168,7 +168,7 @@ const arm = {
   },
   courses: {
     heading: "Մեր Դասընթացները",
-    paragraph: "2 և ավելի ուսանող գրանցելու դեպքում գործում է 20% զեղչ",
+    paragraph: "2 և ավելի ուսանող գրանցելու դեպքում գործում է զեղչ",
     pop: ["ԱՄԵՆԱՀԱՅՏՆԻն", "ՌՈՒՍԵՐԵՆՈՎ (ՆՈՐ)"],
     title: [
       "Սեփական բիզնեսը 0-ից",
@@ -294,7 +294,7 @@ const eng = {
   },
   courses: {
     heading: "Our Courses",
-    paragraph: "If you register 2 or more students, there is a 20% discount",
+    paragraph: "If you register 2 or more students, there is a discount",
     pop: ["MOST POPULAR", "IN RUSSIAN(NEW)"],
     title: [
       "Your Business from 0",
@@ -422,7 +422,7 @@ const rus = {
   },
   courses: {
     heading: "Наши Курсы",
-    paragraph: "При регистрации 2-х и более студентов действует скидка 20%",
+    paragraph: "При регистрации 2-х и более студентов действует скидка",
     pop: ["САМЫЙ ПОПУЛЯРНЫЙ", "НА РУССКОМ(НОВОЕ)"],
     title: [
       "Ваш бизнес с 0",
