@@ -169,7 +169,7 @@ const arm = {
   courses: {
     heading: "Մեր Դասընթացները",
     paragraph: "2 և ավելի ուսանող գրանցելու դեպքում գործում է զեղչ",
-    pop: ["ԱՄԵՆԱՀԱՅՏՆԻն", "ՌՈՒՍԵՐԵՆՈՎ (ՆՈՐ)"],
+    pop: ["ԱՄԵՆԱՀԱՅՏՆԻն", "ՌՈՒՍԱՑ ԼԵԶՎՈՎ"],
     title: [
       "Սեփական բիզնեսը 0-ից",
       "Հետաքրքրաշարժ իրավունք",
@@ -295,7 +295,7 @@ const eng = {
   courses: {
     heading: "Our Courses",
     paragraph: "If you register 2 or more students, there is a discount",
-    pop: ["MOST POPULAR", "IN RUSSIAN(NEW)"],
+    pop: ["MOST POPULAR", "IN RUSSIAN"],
     title: [
       "Your Business from 0",
       "Jurisprudence",
@@ -423,7 +423,7 @@ const rus = {
   courses: {
     heading: "Наши Курсы",
     paragraph: "При регистрации 2-х и более студентов действует скидка",
-    pop: ["САМЫЙ ПОПУЛЯРНЫЙ", "НА РУССКОМ(НОВОЕ)"],
+    pop: ["САМЫЙ ПОПУЛЯРНЫЙ", "НА РУССКОМ ЯЗЫКЕ"],
     title: [
       "Ваш бизнес с 0",
       "Юриспруденция",
