@@ -20,13 +20,6 @@ body {
   zoom: 120%;
 }
 
-.fb_dialog_content > iframe {
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  width: 70px !important;
-  height: 70px !important;
-}
-
 nav {
   display: flex;
   align-items: center;
