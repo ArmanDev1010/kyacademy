@@ -639,22 +639,22 @@ a {
 }
 
 #team a:nth-child(1) .mentor div:nth-child(1) {
-  background-image: url(../images/tutors/lilit.jpeg);
+  background-image: url(./images/tutors/lilit.jpeg);
 }
 #team a:nth-child(2) .mentor div:nth-child(1) {
-  background-image: url(../images/tutors/armant.jpeg);
+  background-image: url(./images/tutors/armant.jpeg);
 }
 #team a:nth-child(3) .mentor div:nth-child(1) {
-  background-image: url(../images/tutors/samvel.jpeg);
+  background-image: url(./images/tutors/samvel.jpeg);
 }
 #team a:nth-child(4) .mentor div:nth-child(1) {
-  background-image: url(../images/tutors/garegin.jpeg);
+  background-image: url(./images/tutors/garegin.jpeg);
 }
 #team a:nth-child(5) .mentor div:nth-child(1) {
-  background-image: url(../images/tutors/grisha.jpeg);
+  background-image: url(./images/tutors/grisha.jpeg);
 }
 #team a:nth-child(6) .mentor div:nth-child(1) {
-  background-image: url(../images/tutors/esim.jpg);
+  background-image: url(./images/tutors/esim.jpg);
 }
 
 .show {
