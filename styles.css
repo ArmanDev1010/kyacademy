@@ -1409,7 +1409,7 @@ footer > p span:nth-child(2) {
   .menu_box {
     display: block;
   }
-  nav > a {
+  nav > a:not(#log) {
     display: none;
   }
   .left:not(#ceo .left) {
