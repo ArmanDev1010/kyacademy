@@ -20,10 +20,11 @@ body {
   zoom: 120%;
 }
 
-.fb-page, 
-.fb-page span, 
-.fb-page span iframe[style] { 
-    width: 100% !important; 
+.fb_dialog_content > iframe {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  width: 70px !important;
+  height: 70px !important;
 }
 
 nav {
