@@ -236,10 +236,24 @@ const arm = {
     ],
   },
   footer: {
-    nav: ["Մեր մասին", "Դասընթացներ", "Կապ"],
-    right: "© 2023, © «KY academy» |, Բոլոր իրավունքները պահպանված են",
-    developed:
-      "Կայքի ձևավորումը՝ <span style='font-weight: bold;'>@armandev10</span>",
+    left: [
+      "© 2023, © «KY academy» |, Բոլոր իրավունքները պահպանված են",
+      'Կայքի ձևավորումը՝ <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/">@armandev10</a>',
+    ],
+    ul: {
+      courses: [
+        "Դասընթացներ",
+        "Սեփական բիզնեսը 0-ից",
+        "Հետաքրքրաշարժ իրավունք",
+        "Փափուկ հմտություններ",
+        "Ուրախ ֆինանսներ",
+        "Մարքեթինգ",
+        "Կոնֆլիկտների հաղթահարում",
+        "Բլոգավարության արվեստը",
+      ],
+      about: ["Մեր մասին", "Ինչպե՞ս սկսվեց ամեն ինչ", "Մեր դասավանդողները"],
+    },
+    right: ["Կապ", "Հեռախոսահամար", "Սոցիալական ցանցերը"],
   },
 };
 const eng = {
@@ -362,10 +376,24 @@ const eng = {
     ],
   },
   footer: {
-    nav: ["About us", "Courses", "Contact"],
-    right: "© 2023, © «KY academy» , All rights reserved",
-    developed:
-      "developed by՝ <span style='font-weight: bold;'>@armandev10</span>",
+    left: [
+      '© 2023, © "KY academy" |, All rights reserved',
+      'Designed by <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/">@armandev10</a>',
+    ],
+    ul: {
+      courses: [
+        "Courses",
+        "Your Business from 0",
+        "Jurisprudence",
+        "Soft Skills",
+        "Happy Finances",
+        "Marketing",
+        "Overcoming Conflicts",
+        "The Art of Blogging",
+      ],
+      about: ["About us", "How did it all start?", "Our Mentors"],
+    },
+    right: ["Contact", "Phone number", "Social networks"],
   },
 };
 const rus = {
@@ -490,10 +518,24 @@ const rus = {
     ],
   },
   footer: {
-    nav: ["О на", "Курсы", "Контакты"],
-    right: "© 2023, © 'KY academy' , All rights reserved",
-    developed:
-      "developed by՝ <span style='font-weight: bold;'>@armandev10</span>",
+    left: [
+      '© 2023, © "KY academy" |, Все права защищены',
+      'Дизайн сайта <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/">@armandev10</a>',
+    ],
+    ul: {
+      courses: [
+        "Курсы",
+        "Ваш бизнес с 0",
+        "Юриспруденция",
+        "Мягкие навыки",
+        "Счастливые финансы",
+        "Маркетинг",
+        "Преодоление конфликтов",
+        "Искусство ведения блога",
+      ],
+      about: ["О нас", "С чего все началось?", "Наши Инструктуры"],
+    },
+    right: ["Контакты", "Номер телефона", "Социальные сети"],
   },
 };
 
@@ -521,8 +563,10 @@ function whatLan() {
     ceo = document.getElementById("ceo"),
     team = document.getElementById("team"),
     team_heading = document.querySelectorAll("#team .mentor div:nth-child(2)"),
-    foot_nav = document.querySelectorAll("#foot_nav li"),
-    footer = document.querySelector("footer > div");
+    footer_left = document.querySelector("footer #left"),
+    footer_ul = document.querySelector("footer > ul"),
+    footer_right = document.querySelector("footer #right"),
+    footer_bottom = document.querySelector("footer > #bottom");
 
   if (localStorage.getItem("lan") === "am") {
     armenianLan(
@@ -548,8 +592,10 @@ function whatLan() {
       ceo,
       team,
       team_heading,
-      foot_nav,
-      footer
+      footer_left,
+      footer_ul,
+      footer_right,
+      footer_bottom
     );
   } else if (localStorage.getItem("lan") === "en") {
     englishLan(
@@ -575,8 +621,10 @@ function whatLan() {
       ceo,
       team,
       team_heading,
-      foot_nav,
-      footer
+      footer_left,
+      footer_ul,
+      footer_right,
+      footer_bottom
     );
   } else if (localStorage.getItem("lan") === "ru") {
     russianLan(
@@ -602,8 +650,10 @@ function whatLan() {
       ceo,
       team,
       team_heading,
-      foot_nav,
-      footer
+      footer_left,
+      footer_ul,
+      footer_right,
+      footer_bottom
     );
   } else {
     armenianLan(
@@ -629,8 +679,10 @@ function whatLan() {
       ceo,
       team,
       team_heading,
-      foot_nav,
-      footer
+      footer_left,
+      footer_ul,
+      footer_right,
+      footer_bottom
     );
   }
 }
@@ -660,8 +712,10 @@ function armenianLan(
   ceo,
   team,
   team_heading,
-  foot_nav,
-  footer
+  footer_left,
+  footer_ul,
+  footer_right,
+  footer_bottom
 ) {
   selected[0].innerText = "Հայ";
   selected[1].innerText = "Հայ";
@@ -787,11 +841,37 @@ function armenianLan(
   team_heading[5].childNodes[3].innerText = arm.team.team_whatdo[5];
 
   //footer
-  foot_nav[0].innerText = arm.footer.nav[0];
-  foot_nav[1].innerText = arm.footer.nav[1];
-  foot_nav[2].innerText = arm.footer.nav[2];
-  footer.childNodes[3].childNodes[1].innerText = arm.footer.right;
-  footer.childNodes[3].childNodes[3].innerHTML = arm.footer.developed;
+  footer_left.childNodes[3].innerText = arm.footer.left[0];
+  footer_left.childNodes[9].innerHTML = arm.footer.left[1];
+  footer_bottom.childNodes[1].innerText = arm.footer.left[0];
+  footer_bottom.childNodes[3].innerHTML = arm.footer.left[1];
+  footer_ul.childNodes[1].childNodes[1].childNodes[0].innerText =
+    arm.footer.ul.courses[0];
+  footer_ul.childNodes[1].childNodes[3].childNodes[0].innerText =
+    arm.footer.ul.courses[1];
+  footer_ul.childNodes[1].childNodes[5].childNodes[0].innerText =
+    arm.footer.ul.courses[2];
+  footer_ul.childNodes[1].childNodes[7].childNodes[0].innerText =
+    arm.footer.ul.courses[3];
+  footer_ul.childNodes[1].childNodes[9].childNodes[0].innerText =
+    arm.footer.ul.courses[4];
+  footer_ul.childNodes[1].childNodes[11].childNodes[0].innerText =
+    arm.footer.ul.courses[5];
+  footer_ul.childNodes[1].childNodes[13].childNodes[0].innerText =
+    arm.footer.ul.courses[6];
+  footer_ul.childNodes[1].childNodes[15].childNodes[0].innerText =
+    arm.footer.ul.courses[7];
+  footer_ul.childNodes[3].childNodes[1].childNodes[0].innerText =
+    arm.footer.ul.about[0];
+  footer_ul.childNodes[3].childNodes[3].childNodes[0].innerText =
+    arm.footer.ul.about[1];
+  footer_ul.childNodes[3].childNodes[5].childNodes[0].innerText =
+    arm.footer.ul.about[2];
+  footer_right.childNodes[1].innerText = arm.footer.right[0];
+  footer_right.childNodes[3].childNodes[1].childNodes[1].innerText =
+    arm.footer.right[1];
+  footer_right.childNodes[3].childNodes[5].childNodes[1].innerText =
+    arm.footer.right[2];
 }
 function englishLan(
   selected,
@@ -816,8 +896,10 @@ function englishLan(
   ceo,
   team,
   team_heading,
-  foot_nav,
-  footer
+  footer_left,
+  footer_ul,
+  footer_right,
+  footer_bottom
 ) {
   selected[0].innerText = "Eng";
   selected[1].innerText = "Eng";
@@ -942,11 +1024,37 @@ function englishLan(
   team_heading[5].childNodes[3].innerText = eng.team.team_whatdo[5];
 
   //footer
-  foot_nav[0].innerText = eng.footer.nav[0];
-  foot_nav[1].innerText = eng.footer.nav[1];
-  foot_nav[2].innerText = eng.footer.nav[2];
-  footer.childNodes[3].childNodes[1].innerText = eng.footer.right;
-  footer.childNodes[3].childNodes[3].innerHTML = eng.footer.developed;
+  footer_left.childNodes[3].innerText = eng.footer.left[0];
+  footer_left.childNodes[9].innerHTML = eng.footer.left[1];
+  footer_bottom.childNodes[1].innerText = eng.footer.left[0];
+  footer_bottom.childNodes[3].innerHTML = eng.footer.left[1];
+  footer_ul.childNodes[1].childNodes[1].childNodes[0].innerText =
+    eng.footer.ul.courses[0];
+  footer_ul.childNodes[1].childNodes[3].childNodes[0].innerText =
+    eng.footer.ul.courses[1];
+  footer_ul.childNodes[1].childNodes[5].childNodes[0].innerText =
+    eng.footer.ul.courses[2];
+  footer_ul.childNodes[1].childNodes[7].childNodes[0].innerText =
+    eng.footer.ul.courses[3];
+  footer_ul.childNodes[1].childNodes[9].childNodes[0].innerText =
+    eng.footer.ul.courses[4];
+  footer_ul.childNodes[1].childNodes[11].childNodes[0].innerText =
+    eng.footer.ul.courses[5];
+  footer_ul.childNodes[1].childNodes[13].childNodes[0].innerText =
+    eng.footer.ul.courses[6];
+  footer_ul.childNodes[1].childNodes[15].childNodes[0].innerText =
+    eng.footer.ul.courses[7];
+  footer_ul.childNodes[3].childNodes[1].childNodes[0].innerText =
+    eng.footer.ul.about[0];
+  footer_ul.childNodes[3].childNodes[3].childNodes[0].innerText =
+    eng.footer.ul.about[1];
+  footer_ul.childNodes[3].childNodes[5].childNodes[0].innerText =
+    eng.footer.ul.about[2];
+  footer_right.childNodes[1].innerText = eng.footer.right[0];
+  footer_right.childNodes[3].childNodes[1].childNodes[1].innerText =
+    eng.footer.right[1];
+  footer_right.childNodes[3].childNodes[5].childNodes[1].innerText =
+    eng.footer.right[2];
 }
 function russianLan(
   selected,
@@ -971,8 +1079,10 @@ function russianLan(
   ceo,
   team,
   team_heading,
-  foot_nav,
-  footer
+  footer_left,
+  footer_ul,
+  footer_right,
+  footer_bottom
 ) {
   selected[0].innerText = "Рус";
   selected[1].innerText = "Рус";
@@ -1097,9 +1207,35 @@ function russianLan(
   team_heading[5].childNodes[3].innerText = rus.team.team_whatdo[5];
 
   //footer
-  foot_nav[0].innerText = rus.footer.nav[0];
-  foot_nav[1].innerText = rus.footer.nav[1];
-  foot_nav[2].innerText = rus.footer.nav[2];
-  footer.childNodes[3].childNodes[1].innerText = rus.footer.right;
-  footer.childNodes[3].childNodes[3].innerHTML = rus.footer.developed;
+  footer_left.childNodes[3].innerText = rus.footer.left[0];
+  footer_left.childNodes[9].innerHTML = rus.footer.left[1];
+  footer_bottom.childNodes[1].innerText = rus.footer.left[0];
+  footer_bottom.childNodes[3].innerHTML = rus.footer.left[1];
+  footer_ul.childNodes[1].childNodes[1].childNodes[0].innerText =
+    rus.footer.ul.courses[0];
+  footer_ul.childNodes[1].childNodes[3].childNodes[0].innerText =
+    rus.footer.ul.courses[1];
+  footer_ul.childNodes[1].childNodes[5].childNodes[0].innerText =
+    rus.footer.ul.courses[2];
+  footer_ul.childNodes[1].childNodes[7].childNodes[0].innerText =
+    rus.footer.ul.courses[3];
+  footer_ul.childNodes[1].childNodes[9].childNodes[0].innerText =
+    rus.footer.ul.courses[4];
+  footer_ul.childNodes[1].childNodes[11].childNodes[0].innerText =
+    rus.footer.ul.courses[5];
+  footer_ul.childNodes[1].childNodes[13].childNodes[0].innerText =
+    rus.footer.ul.courses[6];
+  footer_ul.childNodes[1].childNodes[15].childNodes[0].innerText =
+    rus.footer.ul.courses[7];
+  footer_ul.childNodes[3].childNodes[1].childNodes[0].innerText =
+    rus.footer.ul.about[0];
+  footer_ul.childNodes[3].childNodes[3].childNodes[0].innerText =
+    rus.footer.ul.about[1];
+  footer_ul.childNodes[3].childNodes[5].childNodes[0].innerText =
+    rus.footer.ul.about[2];
+  footer_right.childNodes[1].innerText = rus.footer.right[0];
+  footer_right.childNodes[3].childNodes[1].childNodes[1].innerText =
+    rus.footer.right[1];
+  footer_right.childNodes[3].childNodes[5].childNodes[1].innerText =
+    rus.footer.right[2];
 }
