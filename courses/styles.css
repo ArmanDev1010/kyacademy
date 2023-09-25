@@ -1118,7 +1118,7 @@ footer #right > div p:nth-child(2) {
     color: #fff;
     margin: 5px 0 20px 0;
   }
-  .left > div > p {
+  .left > div > p:not(.right_desc > p) {
     margin-bottom: 5px;
   }
   #b {
