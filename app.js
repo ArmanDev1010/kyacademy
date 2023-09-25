@@ -175,8 +175,6 @@ const arm = {
       "Հետաքրքրաշարժ իրավունք",
       "Փափուկ հմտություններ",
       "Ուրախ ֆինանսներ",
-      "Մարքեթինգ",
-      "Կոնֆլիկտների հաղթահարում",
       "Բլոգավարության արվեստը",
     ],
     sub_title: [
@@ -184,8 +182,6 @@ const arm = {
       "Իմացե'ք` ինչպես գտնել և հասկանալ օրենքը, ճանաչե'ք Ձեր իրավունքները, որ լինեք պաշտպանված",
       "Բարելավեք ձեր փափուկ հմտությունները (հիանալի հաղորդակցություն, առաջնորդություն, վաճառքի կարողություններ և այլն)",
       "Ֆինանսների ձեր ամբողջական ուղեցույցը: Ավելի շատ խնայեք, ավելի խելացի ներդնեք, կրճատեք վարկերը, ավելի վաղ թոշակի անցեք",
-      "Բացահայտեք մարքեթինգի գործնական ասպեկտները՝ այսօրվա մրցակցային բիզնեսի լանդշաֆտում գերազանցելու համար",
-      "Հակամարտությունները ավելի լավ կառավարելու, բանակցելու, ազդելու և խնդիրները լուծելու արդյունավետ մեթոդներ",
       "Ստեղծեք խոստումնալից, աճող բլոգ և հասկացեք, թե ինչպես կարող եք այն դրամայնացնել",
     ],
     monthly: [
@@ -193,16 +189,12 @@ const arm = {
       "<span style='font-size: 24px; font-weight: 700'>32.</span>000 դրամ",
       "<span style='font-size: 24px; font-weight: 700'>30.</span>000 դրամ",
       "<span style='font-size: 24px; font-weight: 700'>35.</span>000 դրամ",
-      "<span style='font-size: 24px; font-weight: 700'>30.</span>000 դրամ",
-      "<span style='font-size: 24px; font-weight: 700'>30.</span>000 դրամ",
       "<span style='font-size: 24px; font-weight: 700'>39.</span>000 դրամ",
     ],
     tutor_name: [
       "Արման Մինասյան",
       "Սամվել Ջաբաղյան",
       "Գարեգին Խաչատրյան",
-      "Գրիշա Հովսեփյան",
-      "Աննա Պարսյան",
       "Եկատերինա Հակոբյան",
     ],
     learn_more: "Իմացեք ավելին",
@@ -223,16 +215,12 @@ const arm = {
       "Արման Մինասյան",
       "Սամվել Ջաբաղյան",
       "Գարեգին Խաչատրյան",
-      "Գրիշա Հովսեփյան",
-      "Աննա Պարսյան",
     ],
     team_whatdo: [
       "Բիզնես",
       "Ֆինանսներ",
       "Իրավագիտություն",
       "Փափուկ հմտություններ",
-      "Մարքեթինգ",
-      "Մենեջմենթ",
     ],
   },
   footer: {
@@ -315,8 +303,6 @@ const eng = {
       "Jurisprudence",
       "Soft Skills",
       "Happy Finances",
-      "Marketing",
-      "Overcoming Conflicts",
       "The Art of Blogging",
     ],
     sub_title: [
@@ -324,8 +310,6 @@ const eng = {
       "Learn how to find and understand the law, know your rights and to be protected",
       "Improve your soft skills (great communicator, leadership, selling abilities, etc.)",
       "Your complete guide to finance. Save more, invest smarter, reduce loans, retire earlier",
-      "Best Digital Marketing Strategies, SEO, Email Marketing, YouTube , Social Media Marketing",
-      "Effective techniques to better manage conflicts, negotiate, influence and solve problems",
       "Create a promising, growing blog and understand how you can monetize it",
     ],
     monthly: [
@@ -333,16 +317,12 @@ const eng = {
       "<span style='font-size: 24px; font-weight: 700'>32.</span>000 amd",
       "<span style='font-size: 24px; font-weight: 700'>30.</span>000 amd",
       "<span style='font-size: 24px; font-weight: 700'>35.</span>000 amd",
-      "<span style='font-size: 24px; font-weight: 700'>30.</span>000 amd",
-      "<span style='font-size: 24px; font-weight: 700'>30.</span>000 amd",
       "<span style='font-size: 24px; font-weight: 700'>39.</span>000 amd",
     ],
     tutor_name: [
       "Arman Minasyan",
       "Samvel Jabaxyan",
       "Garegin Xachatryan",
-      "Grisha Hovsepyan",
-      "Anna Parsyan",
       "Ekaterina Hakobyan",
     ],
     learn_more: "Learn More",
@@ -363,16 +343,12 @@ const eng = {
       "Arman Minasyan",
       "Samvel Jabaxyan",
       "Garegin Xachatryan",
-      "Grisha Hovsepyan",
-      "Anna Parsyan",
     ],
     team_whatdo: [
       "Business",
       "Finances",
       "Jurisprudence",
       "Soft Skills",
-      "Marketing",
-      "Management",
     ],
   },
   footer: {
@@ -457,8 +433,6 @@ const rus = {
       "Юриспруденция",
       "Мягкие навыки",
       "Счастливые финансы",
-      "Маркетинг",
-      "Преодоление конфликтов",
       "Искусство ведения блога",
     ],
     sub_title: [
@@ -466,8 +440,6 @@ const rus = {
       "Научитесь находить и понимать закон, знать свои права и защищаться",
       "Улучшите свои мягкие навыки (отличный коммуникатор, лидерство, способности продавать и т. д.)",
       "Ваше полное руководство по финансам. Экономьте больше, инвестируйте разумнее, сокращайте кредиты, выходите на пенсию раньше",
-      "Лучшие стратегии цифрового маркетинга, SEO, электронный маркетинг, YouTube, маркетинг в социальных сетях",
-      "Эффективные техники для лучшего управления конфликтами, ведения переговоров, влияния и решения проблем",
       "Создайте перспективный, растущий блог и поймите, как вы можете его монетизировать",
     ],
     monthly: [
@@ -475,16 +447,12 @@ const rus = {
       "<span style='font-size: 24px; font-weight: 700'>32.</span>000 драм",
       "<span style='font-size: 24px; font-weight: 700'>30.</span>000 драм",
       "<span style='font-size: 24px; font-weight: 700'>35.</span>000 драм",
-      "<span style='font-size: 24px; font-weight: 700'>30.</span>000 драм",
-      "<span style='font-size: 24px; font-weight: 700'>30.</span>000 драм",
       "<span style='font-size: 24px; font-weight: 700'>39.</span>000 драм",
     ],
     tutor_name: [
       "Арман Минасян",
       "Самвел Джабакян",
       "Гарегин Хачатрян",
-      "Гриша Овсепян",
-      "Анна Парсян",
       "Екатерина Акопян",
     ],
     learn_more: "Узнать больше",
@@ -505,16 +473,12 @@ const rus = {
       "Арман Минасян",
       "Самвел Джабакян",
       "Гарегин Хачатрян",
-      "Гриша Овсепян",
-      "Анна Парсян",
     ],
     team_whatdo: [
       "Бизнес",
       "Финансы",
       "Юриспруденция",
       "Мягкие навыки",
-      "Маркетинг",
-      "Управление",
     ],
   },
   footer: {
@@ -786,36 +750,26 @@ function armenianLan(
   courses_li[2].childNodes[3].innerText = arm.courses.title[2];
   courses_li[3].childNodes[3].innerText = arm.courses.title[3];
   courses_li[4].childNodes[3].innerText = arm.courses.title[4];
-  courses_li[5].childNodes[3].innerText = arm.courses.title[5];
-  courses_li[6].childNodes[3].innerText = arm.courses.title[6];
   courses_li[0].childNodes[5].innerText = arm.courses.sub_title[0];
   courses_li[1].childNodes[5].innerText = arm.courses.sub_title[1];
   courses_li[2].childNodes[5].innerText = arm.courses.sub_title[2];
   courses_li[3].childNodes[5].innerText = arm.courses.sub_title[3];
   courses_li[4].childNodes[5].innerText = arm.courses.sub_title[4];
-  courses_li[5].childNodes[5].innerText = arm.courses.sub_title[5];
-  courses_li[6].childNodes[5].innerText = arm.courses.sub_title[6];
   tutor[0].innerText = arm.courses.tutor_name[0];
   tutor[1].innerText = arm.courses.tutor_name[1];
   tutor[2].innerText = arm.courses.tutor_name[2];
   tutor[3].innerText = arm.courses.tutor_name[0];
   tutor[4].innerText = arm.courses.tutor_name[3];
-  tutor[5].innerText = arm.courses.tutor_name[4];
-  tutor[6].innerText = arm.courses.tutor_name[5];
   pr[0].childNodes[1].innerHTML = arm.courses.monthly[0];
   pr[1].childNodes[1].innerHTML = arm.courses.monthly[1];
   pr[2].childNodes[1].innerHTML = arm.courses.monthly[2];
   pr[3].childNodes[1].innerHTML = arm.courses.monthly[3];
   pr[4].childNodes[1].innerHTML = arm.courses.monthly[4];
-  pr[5].childNodes[1].innerHTML = arm.courses.monthly[5];
-  pr[6].childNodes[1].innerHTML = arm.courses.monthly[6];
   pr[0].childNodes[3].innerHTML = arm.courses.learn_more;
   pr[1].childNodes[3].innerHTML = arm.courses.learn_more;
   pr[2].childNodes[3].innerHTML = arm.courses.learn_more;
   pr[3].childNodes[3].innerHTML = arm.courses.learn_more;
   pr[4].childNodes[3].innerHTML = arm.courses.learn_more;
-  pr[5].childNodes[3].innerHTML = arm.courses.learn_more;
-  pr[6].childNodes[3].innerHTML = arm.courses.learn_more;
 
   //ceo
   ceo.childNodes[1].childNodes[1].innerText = arm.ceo.heading;
@@ -831,14 +785,10 @@ function armenianLan(
   team_heading[1].childNodes[1].innerText = arm.team.team_members[1];
   team_heading[2].childNodes[1].innerText = arm.team.team_members[2];
   team_heading[3].childNodes[1].innerText = arm.team.team_members[3];
-  team_heading[4].childNodes[1].innerText = arm.team.team_members[4];
-  team_heading[5].childNodes[1].innerText = arm.team.team_members[5];
   team_heading[0].childNodes[3].innerText = arm.team.team_whatdo[0];
   team_heading[1].childNodes[3].innerText = arm.team.team_whatdo[1];
   team_heading[2].childNodes[3].innerText = arm.team.team_whatdo[2];
   team_heading[3].childNodes[3].innerText = arm.team.team_whatdo[3];
-  team_heading[4].childNodes[3].innerText = arm.team.team_whatdo[4];
-  team_heading[5].childNodes[3].innerText = arm.team.team_whatdo[5];
 
   //footer
   footer_left.childNodes[3].innerText = arm.footer.left[0];
@@ -856,10 +806,6 @@ function armenianLan(
   footer_ul.childNodes[1].childNodes[9].childNodes[0].innerText =
     arm.footer.ul.courses[4];
   footer_ul.childNodes[1].childNodes[11].childNodes[0].innerText =
-    arm.footer.ul.courses[5];
-  footer_ul.childNodes[1].childNodes[13].childNodes[0].innerText =
-    arm.footer.ul.courses[6];
-  footer_ul.childNodes[1].childNodes[15].childNodes[0].innerText =
     arm.footer.ul.courses[7];
   footer_ul.childNodes[3].childNodes[1].childNodes[0].innerText =
     arm.footer.ul.about[0];
@@ -969,36 +915,26 @@ function englishLan(
   courses_li[2].childNodes[3].innerText = eng.courses.title[2];
   courses_li[3].childNodes[3].innerText = eng.courses.title[3];
   courses_li[4].childNodes[3].innerText = eng.courses.title[4];
-  courses_li[5].childNodes[3].innerText = eng.courses.title[5];
-  courses_li[6].childNodes[3].innerText = eng.courses.title[6];
   courses_li[0].childNodes[5].innerText = eng.courses.sub_title[0];
   courses_li[1].childNodes[5].innerText = eng.courses.sub_title[1];
   courses_li[2].childNodes[5].innerText = eng.courses.sub_title[2];
   courses_li[3].childNodes[5].innerText = eng.courses.sub_title[3];
   courses_li[4].childNodes[5].innerText = eng.courses.sub_title[4];
-  courses_li[5].childNodes[5].innerText = eng.courses.sub_title[5];
-  courses_li[6].childNodes[5].innerText = eng.courses.sub_title[6];
   tutor[0].innerText = eng.courses.tutor_name[0];
   tutor[1].innerText = eng.courses.tutor_name[1];
   tutor[2].innerText = eng.courses.tutor_name[2];
   tutor[3].innerText = eng.courses.tutor_name[0];
   tutor[4].innerText = eng.courses.tutor_name[3];
-  tutor[5].innerText = eng.courses.tutor_name[4];
-  tutor[6].innerText = eng.courses.tutor_name[5];
   pr[0].childNodes[1].innerHTML = eng.courses.monthly[0];
   pr[1].childNodes[1].innerHTML = eng.courses.monthly[1];
   pr[2].childNodes[1].innerHTML = eng.courses.monthly[2];
   pr[3].childNodes[1].innerHTML = eng.courses.monthly[3];
   pr[4].childNodes[1].innerHTML = eng.courses.monthly[4];
-  pr[5].childNodes[1].innerHTML = eng.courses.monthly[5];
-  pr[6].childNodes[1].innerHTML = eng.courses.monthly[6];
   pr[0].childNodes[3].innerHTML = eng.courses.learn_more;
   pr[1].childNodes[3].innerHTML = eng.courses.learn_more;
   pr[2].childNodes[3].innerHTML = eng.courses.learn_more;
   pr[3].childNodes[3].innerHTML = eng.courses.learn_more;
   pr[4].childNodes[3].innerHTML = eng.courses.learn_more;
-  pr[5].childNodes[3].innerHTML = eng.courses.learn_more;
-  pr[6].childNodes[3].innerHTML = eng.courses.learn_more;
 
   //ceo
   ceo.childNodes[1].childNodes[1].innerText = eng.ceo.heading;
@@ -1007,21 +943,17 @@ function englishLan(
 
   //team
   team.childNodes[1].childNodes[1].innerText = eng.team.heading;
+  team.childNodes[1].childNodes[1].classList.add("arm_f");
   team.childNodes[1].childNodes[3].innerText = eng.team.paragraph;
   team.childNodes[1].childNodes[5].innerText = eng.team.btn;
-  team.childNodes[1].childNodes[1].classList.remove("arm_f");
   team_heading[0].childNodes[1].innerText = eng.team.team_members[0];
   team_heading[1].childNodes[1].innerText = eng.team.team_members[1];
   team_heading[2].childNodes[1].innerText = eng.team.team_members[2];
   team_heading[3].childNodes[1].innerText = eng.team.team_members[3];
-  team_heading[4].childNodes[1].innerText = eng.team.team_members[4];
-  team_heading[5].childNodes[1].innerText = eng.team.team_members[5];
   team_heading[0].childNodes[3].innerText = eng.team.team_whatdo[0];
   team_heading[1].childNodes[3].innerText = eng.team.team_whatdo[1];
   team_heading[2].childNodes[3].innerText = eng.team.team_whatdo[2];
   team_heading[3].childNodes[3].innerText = eng.team.team_whatdo[3];
-  team_heading[4].childNodes[3].innerText = eng.team.team_whatdo[4];
-  team_heading[5].childNodes[3].innerText = eng.team.team_whatdo[5];
 
   //footer
   footer_left.childNodes[3].innerText = eng.footer.left[0];
@@ -1039,10 +971,6 @@ function englishLan(
   footer_ul.childNodes[1].childNodes[9].childNodes[0].innerText =
     eng.footer.ul.courses[4];
   footer_ul.childNodes[1].childNodes[11].childNodes[0].innerText =
-    eng.footer.ul.courses[5];
-  footer_ul.childNodes[1].childNodes[13].childNodes[0].innerText =
-    eng.footer.ul.courses[6];
-  footer_ul.childNodes[1].childNodes[15].childNodes[0].innerText =
     eng.footer.ul.courses[7];
   footer_ul.childNodes[3].childNodes[1].childNodes[0].innerText =
     eng.footer.ul.about[0];
@@ -1152,36 +1080,26 @@ function russianLan(
   courses_li[2].childNodes[3].innerText = rus.courses.title[2];
   courses_li[3].childNodes[3].innerText = rus.courses.title[3];
   courses_li[4].childNodes[3].innerText = rus.courses.title[4];
-  courses_li[5].childNodes[3].innerText = rus.courses.title[5];
-  courses_li[6].childNodes[3].innerText = rus.courses.title[6];
   courses_li[0].childNodes[5].innerText = rus.courses.sub_title[0];
   courses_li[1].childNodes[5].innerText = rus.courses.sub_title[1];
   courses_li[2].childNodes[5].innerText = rus.courses.sub_title[2];
   courses_li[3].childNodes[5].innerText = rus.courses.sub_title[3];
   courses_li[4].childNodes[5].innerText = rus.courses.sub_title[4];
-  courses_li[5].childNodes[5].innerText = rus.courses.sub_title[5];
-  courses_li[6].childNodes[5].innerText = rus.courses.sub_title[6];
   tutor[0].innerText = rus.courses.tutor_name[0];
   tutor[1].innerText = rus.courses.tutor_name[1];
   tutor[2].innerText = rus.courses.tutor_name[2];
   tutor[3].innerText = rus.courses.tutor_name[0];
   tutor[4].innerText = rus.courses.tutor_name[3];
-  tutor[5].innerText = rus.courses.tutor_name[4];
-  tutor[6].innerText = rus.courses.tutor_name[5];
   pr[0].childNodes[1].innerHTML = rus.courses.monthly[0];
   pr[1].childNodes[1].innerHTML = rus.courses.monthly[1];
   pr[2].childNodes[1].innerHTML = rus.courses.monthly[2];
   pr[3].childNodes[1].innerHTML = rus.courses.monthly[3];
   pr[4].childNodes[1].innerHTML = rus.courses.monthly[4];
-  pr[5].childNodes[1].innerHTML = rus.courses.monthly[5];
-  pr[6].childNodes[1].innerHTML = rus.courses.monthly[6];
   pr[0].childNodes[3].innerHTML = rus.courses.learn_more;
   pr[1].childNodes[3].innerHTML = rus.courses.learn_more;
   pr[2].childNodes[3].innerHTML = rus.courses.learn_more;
   pr[3].childNodes[3].innerHTML = rus.courses.learn_more;
   pr[4].childNodes[3].innerHTML = rus.courses.learn_more;
-  pr[5].childNodes[3].innerHTML = rus.courses.learn_more;
-  pr[6].childNodes[3].innerHTML = rus.courses.learn_more;
 
   //ceo
   ceo.childNodes[1].childNodes[1].innerText = rus.ceo.heading;
@@ -1190,21 +1108,17 @@ function russianLan(
 
   //team
   team.childNodes[1].childNodes[1].innerText = rus.team.heading;
+  team.childNodes[1].childNodes[1].classList.add("arm_f");
   team.childNodes[1].childNodes[3].innerText = rus.team.paragraph;
   team.childNodes[1].childNodes[5].innerText = rus.team.btn;
-  team.childNodes[1].childNodes[1].classList.remove("arm_f");
   team_heading[0].childNodes[1].innerText = rus.team.team_members[0];
   team_heading[1].childNodes[1].innerText = rus.team.team_members[1];
   team_heading[2].childNodes[1].innerText = rus.team.team_members[2];
   team_heading[3].childNodes[1].innerText = rus.team.team_members[3];
-  team_heading[4].childNodes[1].innerText = rus.team.team_members[4];
-  team_heading[5].childNodes[1].innerText = rus.team.team_members[5];
   team_heading[0].childNodes[3].innerText = rus.team.team_whatdo[0];
   team_heading[1].childNodes[3].innerText = rus.team.team_whatdo[1];
   team_heading[2].childNodes[3].innerText = rus.team.team_whatdo[2];
   team_heading[3].childNodes[3].innerText = rus.team.team_whatdo[3];
-  team_heading[4].childNodes[3].innerText = rus.team.team_whatdo[4];
-  team_heading[5].childNodes[3].innerText = rus.team.team_whatdo[5];
 
   //footer
   footer_left.childNodes[3].innerText = rus.footer.left[0];
@@ -1223,10 +1137,6 @@ function russianLan(
     rus.footer.ul.courses[4];
   footer_ul.childNodes[1].childNodes[11].childNodes[0].innerText =
     rus.footer.ul.courses[5];
-  footer_ul.childNodes[1].childNodes[13].childNodes[0].innerText =
-    rus.footer.ul.courses[6];
-  footer_ul.childNodes[1].childNodes[15].childNodes[0].innerText =
-    rus.footer.ul.courses[7];
   footer_ul.childNodes[3].childNodes[1].childNodes[0].innerText =
     rus.footer.ul.about[0];
   footer_ul.childNodes[3].childNodes[3].childNodes[0].innerText =
