@@ -56,19 +56,19 @@
   </head>
   <body>
     <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
+    <!-- <div id="fb-root"></div> -->
 
     <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <!-- <div id="fb-customer-chat" class="fb-customerchat"></div>
 
     <script>
       var chatbox = document.getElementById("fb-customer-chat");
       chatbox.setAttribute("page_id", "2356966517904276");
       chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
+    </script> -->
 
     <!-- Your SDK code -->
-    <script>
+    <!-- <script>
       window.fbAsyncInit = function () {
         FB.init({
           xfbml: true,
@@ -85,29 +85,163 @@
         js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
         fjs.parentNode.insertBefore(js, fjs);
       })(document, "script", "facebook-jssdk");
-    </script>
+    </script> -->
 
-    <header>
-      <nav class="nav">
-        <a href="https://kya.am/" id="log"
-          ><img src="images/logo.png" alt="logo" />
-        </a>
-        <ul id="pages">
-          <a href="./about"><li>Մեր մասին</li></a>
-          <a href="#courses"><li>Դասընթացներ</li></a>
-          <a href="#contact"><li>Կապ</li></a>
+      <div id="topnav">
+        <div>
+          <ul id="top_socials">
+            <a href="https://www.facebook.com/kyacademyerevan" target="_blank">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-facebook"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                  />
+                </svg>
+              </li>
+            </a>
+            <a href="https://www.instagram.com/ky_academ.y/" target="_blank">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-instagram"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                  />
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                  <path d="M16.5 7.5l0 .01" />
+                </svg>
+              </li>
+            </a>
+            <a
+              href="https://www.youtube.com/@kidpreneursschool"
+              target="_blank"
+            >
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-youtube"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
+                  />
+                  <path d="M10 9l5 3l-5 3z" />
+                </svg>
+              </li>
+            </a>
+          </ul>
+          <a href="tel:+37455500533">
+            <li id="number">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-phone"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+                />
+              </svg>
+              <p>+374 55 50 05 33</p>
+            </li>
+          </a>
+        </div>
+        <ul id="middle">
+          <a href="tel:+37455500533">
+            <li id="number">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-phone"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+                />
+              </svg>
+              <p>+374 55 50 05 33</p>
+            </li>
+          </a>
+          <a href="https://maps.app.goo.gl/Tf1h4xPbU3FTp1fb8" target="_blank">
+            <li id="adress">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-map-pin"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                <path
+                  d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+                />
+              </svg>
+              <p>Ազատության 24/15</p>
+            </li>
+          </a>
+        </ul>
+        <div id="language">
           <li class="dropdown language">
             <div class="select">
-              <img src="" alt="" class="select_img" />
               <span class="selected"></span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-chevron-down"
-                width="20"
-                height="20"
+                width="22"
+                height="22"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
-                stroke="#222"
+                stroke="#ffff"
                 fill="none"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -122,6 +256,16 @@
               <li data-lan="ru">Рус</li>
             </ul>
           </li>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="https://kya.am/" id="log"
+          ><img src="images/logo.png" alt="logo" />
+        </a>
+        <ul id="pages">
+          <a href="./about"><li>Մեր մասին</li></a>
+          <a href="#courses"><li>Դասընթացներ</li></a>
+          <a href="#contact"><li>Կապ</li></a>
         </ul>
         <div class="menu_box">
           <button class="menu_btn">
@@ -143,131 +287,6 @@
                 >
               </ul>
             </div>
-            <li class="dropdown language">
-              <div class="select">
-                <img src="" alt="" class="select_img" />
-                <span class="selected"></span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-chevron-down"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="#222"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M6 9l6 6l6 -6" />
-                </svg>
-              </div>
-              <ul class="menu">
-                <li data-lan="am">Հայ</li>
-                <li data-lan="en">Eng</li>
-                <li data-lan="ru">Рус</li>
-              </ul>
-            </li>
-            <li id="second_li">
-              <ul id="socials-mobile">
-                <a
-                  href="https://www.facebook.com/kyacademyerevan"
-                  target="_blank"
-                >
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-facebook"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="#000"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path
-                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
-                      />
-                    </svg>
-                  </li>
-                </a>
-                <a
-                  href="https://www.instagram.com/ky_academ.y/"
-                  target="_blank"
-                >
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-instagram"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="#000"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path
-                        d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
-                      />
-                      <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                      <path d="M16.5 7.5l0 .01" />
-                    </svg>
-                  </li>
-                </a>
-                <a
-                  href="https://www.youtube.com/@kidpreneursschool"
-                  target="_blank"
-                >
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-youtube"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="#000"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path
-                        d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
-                      />
-                      <path d="M10 9l5 3l-5 3z" />
-                    </svg>
-                  </li>
-                </a>
-              </ul>
-              <p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-phone"
-                  width="28"
-                  height="28"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="#000"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
-                  />
-                </svg>
-                <span>+374 55 500533</span>
-              </p>
-            </li>
           </div>
         </div>
         <a
@@ -299,7 +318,7 @@
             <img src="images/Frame 211.png" alt="" />
           </div>
           <div class="right">
-            <img src="images/homefirst.png" alt="" />
+            <img src="images/home.png" alt="" />
           </div>
         </div>
       </main>
@@ -2430,8 +2449,7 @@
       </section>
       <section id="advantages">
         <div class="right">
-          <img src="./images/pointingMari.png" alt="" />
-          <!-- <img id="its" src="./images/1transformed.png" alt="" /> -->
+          <img src="./images/pointing.png" alt="" />
         </div>
         <div class="left">
           <h2>
@@ -2473,7 +2491,7 @@
             <li>
               <span class="number">5</span>
               <div class="">
-                <h3>>Հանդիպում հյուրի հետ</h3>
+                <h3>Հանդիպում հյուրի հետ</h3>
                 <p>
                   անհատական շփում ոլորտում կայացած մասնագետների և ձեռներեցների
                   հետ
@@ -2602,175 +2620,6 @@
               <div class="fade_"></div>
             </li>
           </a>
-          <a href="./courses/soft">
-            <li data-course="soft">
-              <div class="course_image_parent">
-                <div class="course_image"></div>
-              </div>
-              <h3>Փափուկ հմտություններ</h3>
-              <p>
-                Բարելավեք ձեր փափուկ հմտությունները (հիանալի հաղորդակցություն,
-                առաջնորդություն, վաճառքի կարողություններ և այլն)
-              </p>
-              <div id="bottom_cor_">
-                <div class="">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-star"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="#f4c900"
-                    fill="#f4c900"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path
-                      d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-                    />
-                  </svg>
-                  <p>4.7</p>
-                  <span
-                    style="
-                      font-size: 18px;
-                      font-weight: 500;
-                      margin-left: 5px;
-                      margin-right: 5px;
-                      color: #a4a4a4;
-                    "
-                    >•</span
-                  >
-                  <div class="tutor">
-                    <div class="tutor_image"></div>
-                    <p>Գարեգին Խաչատրյան</p>
-                  </div>
-                </div>
-                <div class="pr">
-                  <p>
-                    <span style="font-size: 24px; font-weight: 700">30.</span
-                    >000 դրամ
-                  </p>
-                  <button>Իմացեք ավելին</button>
-                </div>
-              </div>
-              <div class="fade_"></div>
-            </li>
-          </a>
-          <a href="./courses/finance">
-            <li data-course="finance">
-              <div class="course_image_parent">
-                <div class="course_image"></div>
-              </div>
-              <h3>Ուրախ ֆինանսներ</h3>
-              <p>
-                Ֆինանսների ձեր ամբողջական ուղեցույցը: Ավելի շատ խնայեք, ավելի
-                խելացի ներդնեք, կրճատեք վարկերը, ավելի վաղ թոշակի անցեք
-              </p>
-              <div id="bottom_cor_">
-                <div class="">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-star"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="#f4c900"
-                    fill="#f4c900"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path
-                      d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-                    />
-                  </svg>
-                  <p>4.8</p>
-                  <span
-                    style="
-                      font-size: 18px;
-                      font-weight: 500;
-                      margin-left: 5px;
-                      margin-right: 5px;
-                      color: #a4a4a4;
-                    "
-                    >•</span
-                  >
-                  <div class="tutor">
-                    <div class="tutor_image"></div>
-                    <p>Արման Մինասյան</p>
-                  </div>
-                </div>
-                <div class="pr">
-                  <p>
-                    <span style="font-size: 24px; font-weight: 700">35.</span
-                    >000 դրամ
-                  </p>
-                  <button>Իմացեք ավելին</button>
-                </div>
-              </div>
-              <div class="fade_"></div>
-            </li>
-          </a>
-          <a href="./courses/blogging">
-            <li data-course="argument">
-              <div class="course_image_parent">
-                <div class="course_image"></div>
-              </div>
-              <h3>Բլոգավարության արվեստը</h3>
-              <p>
-                Ստեղծեք խոստումնալից, աճող բլոգ և հասկացեք, թե ինչպես կարող եք
-                այն դրամայնացնել
-              </p>
-              <div id="bottom_cor_">
-                <div class="">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-star"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="#f4c900"
-                    fill="#f4c900"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path
-                      d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-                    />
-                  </svg>
-                  <p>4.6</p>
-                  <span
-                    style="
-                      font-size: 18px;
-                      font-weight: 500;
-                      margin-left: 5px;
-                      margin-right: 5px;
-                      color: #a4a4a4;
-                    "
-                    >•</span
-                  >
-                  <div class="tutor">
-                    <div class="tutor_image"></div>
-                    <p>Եկատերինա Հակոբյան</p>
-                  </div>
-                </div>
-                <div class="pr">
-                  <p>
-                    <span style="font-size: 24px; font-weight: 700">39.</span
-                    >000 դրամ
-                  </p>
-                  <button>Իմացեք ավելին</button>
-                </div>
-              </div>
-              <div class="fade_"></div>
-              <div id="pop">ՌՈՒՍԱՑ ԼԵԶՎՈՎ</div>
-            </li>
-          </a>
         </ul>
       </section>
       <section id="ceo">
@@ -2812,20 +2661,9 @@
             երեխաներին և ուսանողներին 21-րդ դարում հաջողության հասնելու հնարավոր
             բոլոր գիտելիքները և հմտությունները։ Երբեք շուտ չէ
           </p>
-          <a href="./about#ceo">
-            Continue reading
-          </a>
+          <a href="./about#ceo"> Continue reading </a>
         </div>
-        <img
-          id="lilit"
-          src="https://d35v9chtr4gec.cloudfront.net/kidpreneurs/1674479628444806133.jpeg"
-          alt=""
-        />
-        <img
-          id="prop"
-          src="https://assets.website-files.com/5837424ae11409586f837994/6297ec4b82aede5f3dfac579_eGroup%2049.svg"
-          alt=""
-        />
+        <img id="lilit" src="./images/tutors/ceo.jpeg" alt="" />
       </section>
       <section id="team">
         <div class="left">
@@ -2875,6 +2713,48 @@
               </div>
             </li></a
           >
+          <a href="">
+            <li class="mentor">
+              <div class=""></div>
+              <div class="">
+                <h3>Arman Sargsyan</h3>
+                <p>???</p>
+              </div>
+            </li></a
+          >
+          <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/">
+            <li class="mentor">
+              <div class=""></div>
+              <div class="">
+                <h3>Arman Manukyan</h3>
+                <p>Web developer</p>
+              </div>
+            </li></a
+          >
+          <a href="">
+            <li class="mentor">
+              <div class=""></div>
+              <div class="">
+                <h3></h3>
+                <p></p>
+              </div></li
+          ></a>
+          <a href="">
+            <li class="mentor">
+              <div class=""></div>
+              <div class="">
+                <h3></h3>
+                <p></p>
+              </div></li
+          ></a>
+          <a href="">
+            <li class="mentor">
+              <div class=""></div>
+              <div class="">
+                <h3></h3>
+                <p></p>
+              </div></li
+          ></a>
         </ul>
       </section>
       <iframe
@@ -2906,14 +2786,11 @@
             <li class="title"><a href="#courses">Դասընթացներ</a></li>
             <li><a href="./courses/business">Սեփական բիզնեսը 0-ից</a></li>
             <li><a href="./courses/rights">Հետաքրքրաշարժ իրավունք</a></li>
-            <li><a href="./courses/soft">Փափուկ հմտություններ</a></li>
-            <li><a href="./courses/finance">Ուրախ ֆինանսներ</a></li>
-            <li><a href="./courses/blogging">Բլոգավարության արվեստը</a></li>
           </ol>
           <ol>
             <li class="title"><a href="./about">Մեր մասին</a></li>
             <li><a href="./about#ceo">Ինչպե՞ս սկսվեց ամեն ինչ</a></li>
-            <li><a href="#team">Մեր դասավանդողները</a></li>
+            <li><a href="#team">Մեր Թիմը</a></li>
           </ol>
         </ul>
         <div id="right">
@@ -3019,7 +2896,6 @@
           </p>
         </div>
       </footer>
-    </header>
     <script src="app.js" defer></script>
   </body>
 </html>

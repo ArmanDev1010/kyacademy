@@ -20,6 +20,77 @@ body {
   zoom: 120%;
 }
 
+#topnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #424242;
+  color: #ffff;
+  padding: 7px;
+}
+
+#topnav a {
+  color: #ffff;
+}
+
+#topnav #top_socials,
+#topnav #middle,
+#topnav #language,
+#topnav #number,
+#topnav #adress {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  align-items: center;
+  position: relative;
+}
+
+#topnav > div:nth-child(1) #number {
+  display: none;
+  margin-left: 10px;
+}
+
+#topnav > div:nth-child(1) {
+  display: flex;
+  align-items: center; 
+}
+
+#topnav #language {
+  gap: 0;
+}
+
+#topnav #top_socials li {
+  height: 20px;
+}
+
+#topnav #middle {
+  gap: 30px;
+  font-size: 13px;
+}
+
+#topnav #number {
+  gap: 5px;
+  font-size: 13px;
+}
+
+#topnav > div:nth-child(1):after, #language:before {
+  display: block;
+  height: 16px;
+  border-left: 1px solid;
+  opacity: 0.1;
+  content: "";
+  margin: 0 20px;
+}
+
+#topnav > div:nth-child(1) #number:before {
+  display: block;
+  height: 16px;
+  border-left: 1px solid;
+  opacity: 0.1;
+  content: "";
+  margin: 0 5px;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -73,11 +144,8 @@ nav ul li:hover {
   display: flex;
   align-items: center;
   gap: 7px;
-}
-
-.select img {
-  width: 20px;
-  height: 15px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .menu {
@@ -89,19 +157,21 @@ nav ul li:hover {
   transform: translateX(-50%);
   display: none;
   transition: 0.2s;
-  z-index: 1;
+  z-index: 9999999;
+  list-style: none;
   opacity: 0;
+  color: #333333;
+  border: 1px solid #e5e5e5;
 }
 
 .menu li {
-  padding: 10px;
-  padding-right: 50px;
+  padding: 10px 8px;
   background: white;
-  border: 1px solid #7d7d7d;
+  cursor: pointer;
 }
 
 .active {
-  background: rgb(180, 180, 180) !important;
+  background: #F2F3F5 !important;
 }
 
 .caret-rotate {
@@ -360,30 +430,6 @@ nav > a > button,
   z-index: 40;
 }
 
-.menu_section > #second_li {
-  position: absolute;
-  bottom: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 15px;
-  border-top: 1px #e3e3e3 solid;
-}
-
-.menu_section > #second_li > p {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: default;
-}
-
-.menu_section > #second_li > p span {
-  font-size: 13px;
-  font-weight: bold;
-}
-
 main {
   background: #f4c900;
   background-position: 0 0, 0 0;
@@ -462,7 +508,7 @@ main {
 }
 
 #out .bottom {
-  display: flex;
+  display: none;
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
@@ -712,7 +758,7 @@ main {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 400px);
   gap: 40px;
 }
 
@@ -1015,13 +1061,10 @@ main {
   padding: 50px;
   margin-bottom: 60px;
   background: #ffffff;
-  background-position: 0 0, 0 0;
-  background-size: auto, auto;
   color: #101010;
   position: relative;
   overflow: hidden;
-  flex-wrap: wrap-reverse;
-  background-image: url(./images/noise.png), linear-gradient(#ffffff, #ffffff);
+  background: rgb(255, 255, 255);
 }
 
 #ceo #lilit {
@@ -1030,17 +1073,16 @@ main {
   z-index: 10;
 }
 
-#ceo #prop {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 9;
-  width: 200px;
+#ceo .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #ceo .left h2 {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
   margin-bottom: 15px;
   position: relative;
 }
@@ -1050,7 +1092,8 @@ main {
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box !important;
-  -webkit-line-clamp: 10;
+  -webkit-line-clamp: 5;
+  text-align: center;
   -webkit-box-orient: vertical;
   white-space: normal;
 }
@@ -1083,7 +1126,7 @@ main {
 
 #team ul {
   display: grid;
-  grid-template-columns: repeat(3, 280px);
+  grid-template-columns: repeat(4, 260px);
   justify-content: center;
   gap: 20px;
 }
@@ -1091,18 +1134,18 @@ main {
 #team .mentor {
   background: #ffff;
   width: 100%;
-  height: 280px;
+  height: 320px;
   list-style: none;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
   color: #222;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  max-width: 280px;
+  max-width: 260px;
   transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+  position: relative;
 }
 
 #team .mentor > div:nth-child(1) {
@@ -1111,27 +1154,23 @@ main {
   background-position: center center;
   height: 600px;
   width: 100%;
+  border-radius: 10px;
 }
 
 #team .mentor > div:nth-child(2) {
   position: absolute;
   bottom: 1rem;
-  left: 50%;
-  text-align: center;
-  transform: translateX(-50%);
-  background: white;
-  width: 90%;
-  border-radius: 50px;
-  border: 2px solid #222;
-  padding: 5px 0;
+  width: 100%;
+  padding: 15px 0 0 15px;
 }
 
 #team h3 {
   font-size: 18px;
+  color: #ffff;
 }
 
 #team .mentor p {
-  color: #7d7d7d;
+  color: #b6b6b6;
   font-size: 16px;
 }
 
@@ -1150,22 +1189,31 @@ a {
 }
 
 #team a:nth-child(1) .mentor div:nth-child(1) {
-  background-image: url(./images/tutors/lilit.jpeg);
+  background-image: url(./images/tutors/lilitp.jpg);
 }
 #team a:nth-child(2) .mentor div:nth-child(1) {
-  background-image: url(./images/tutors/armant.jpeg);
+  background-image: url(./images/tutors/armanp1.JPG);
 }
 #team a:nth-child(3) .mentor div:nth-child(1) {
-  background-image: url(./images/tutors/samvel.jpeg);
+  background-image: url(./images/tutors/samvelp.JPG);
 }
 #team a:nth-child(4) .mentor div:nth-child(1) {
-  background-image: url(./images/tutors/garegin.jpeg);
+  background-image: url(./images/tutors/gareginp.JPG);
 }
 #team a:nth-child(5) .mentor div:nth-child(1) {
-  background-image: url(./images/tutors/grisha.jpeg);
+  background-image: url(./images/tutors/armansp.JPG);
 }
 #team a:nth-child(6) .mentor div:nth-child(1) {
-  background-image: url(./images/tutors/esim.jpg);
+  background-image: url(./images/tutors/armanmp.JPG);
+}
+#team a:nth-child(7) .mentor div:nth-child(1) {
+  background-image: url(./images/tutors/marip.JPG);
+}
+#team a:nth-child(8) .mentor div:nth-child(1) {
+  background-image: url(./images/tutors/anip.JPG);
+}
+#team a:nth-child(9) .mentor div:nth-child(1) {
+  background-image: url(./images/tutors/manep.JPG);
 }
 
 .show {
@@ -1249,7 +1297,8 @@ footer ol li a {
   color: #555555;
 }
 
-footer #right, footer #right #bottom {
+footer #right,
+footer #right #bottom {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -1312,6 +1361,9 @@ footer #right > div p:nth-child(2) {
   }
   #courses ul {
     grid-template-columns: repeat(2, 400px);
+  }
+  #team ul {
+    grid-template-columns: repeat(3, 260px);
   }
   footer {
     display: grid;
@@ -1387,10 +1439,6 @@ footer #right > div p:nth-child(2) {
     height: auto;
     max-width: 100%;
   }
-  #team ul {
-    grid-template-columns: repeat(2, 270px);
-    gap: 30px;
-  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -1413,9 +1461,22 @@ footer #right > div p:nth-child(2) {
   #courses li > h3 {
     font-size: 18px;
   }
+  #ceo {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  #ceo #lilit {
+    width: 350px;
+  }
   #courses li > p {
     font-size: 14px;
     margin-top: 7px;
+  }
+  #team ul {
+    grid-template-columns: repeat(2, 260px);
+  }
+  #team a:nth-child(10) {
+    grid-column: auto;
   }
   footer {
     padding: 60px 30px;
@@ -1449,15 +1510,6 @@ footer #right > div p:nth-child(2) {
   .left:not(#ceo .left) {
     width: 100%;
   }
-  #ceo {
-    gap: 50px;
-  }
-  #ceo #lilit {
-    width: 280px;
-  }
-  #ceo #prop {
-    display: none;
-  }
   .main .left img {
     position: absolute;
     top: 0rem;
@@ -1485,6 +1537,19 @@ footer #right > div p:nth-child(2) {
 }
 
 @media screen and (max-width: 768px) {
+  #topnav {
+    justify-content: space-between;
+    padding: 7px 20px;
+  }
+  #topnav > div:nth-child(1) #number {
+    display: flex;
+  }
+  #topnav #middle {
+    display: none;
+  }
+  #topnav > div:nth-child(1):after, #language:before {
+    display: none;
+  }
   .main {
     position: relative;
     gap: 50px;
@@ -1542,8 +1607,11 @@ footer #right > div p:nth-child(2) {
   #advantages .left h2 br {
     display: none;
   }
+  #team .mentor {
+    height: 300px;
+  }
   #team ul {
-    grid-template-columns: repeat(1, 270px);
+    grid-template-columns: repeat(2, 220px);
   }
   .drop h3 {
     font-size: 16px;
@@ -1620,10 +1688,16 @@ footer #right > div p:nth-child(2) {
   }
   #courses h2,
   #team .left h2 {
-    font-size: max(3vw, 7vw);
+    font-size: max(3vw, 7.5vw);
   }
   #courses p {
     font-size: 14px;
+  }
+  #team .mentor {
+    height: 320px;
+  }
+  #team ul {
+    grid-template-columns: repeat(1, 260px);
   }
   #team .left {
     margin-bottom: 40px;
@@ -1643,7 +1717,7 @@ footer #right > div p:nth-child(2) {
     z-index: -1;
   }
   #ceo {
-    padding: 50px 30px;
+    padding: 50px 20px;
   }
   #ceo .left {
     width: 100%;
@@ -1651,6 +1725,9 @@ footer #right > div p:nth-child(2) {
   #ceo #lilit {
     height: auto;
     max-width: 100%;
+  }
+  #ceo .left h2 {
+    font-size: 34px;
   }
   #ceo .left p {
     width: 100%;
@@ -1664,6 +1741,15 @@ footer #right > div p:nth-child(2) {
 }
 
 @media screen and (max-width: 500px) {
+  #topnav {
+    padding: 5px;
+  }
+  #topnav #top_socials a {
+    display: none;
+  }
+  #topnav > div #number:nth-child(1):before {
+    display: none;
+  }
   nav {
     width: 100%;
     padding: 20px;
@@ -1672,15 +1758,9 @@ footer #right > div p:nth-child(2) {
     top: 2rem;
     left: 2rem;
   }
-  .select {
-    font-size: 20px;
-  }
   .menu_active {
     width: 100%;
     height: 100%;
-  }
-  .menu_section > #second_li {
-    padding: 30px 10px;
   }
   .menu_section {
     position: fixed;
@@ -1744,8 +1824,14 @@ footer #right > div p:nth-child(2) {
   #out .left h2 {
     font-size: max(3vw, 8vw);
   }
+  #advantages {
+    padding: 50px 15px 70px 15px;
+  }
   #advantages li h3 {
-    font-size: 16px !important;
+    font-size: 15px !important;
+  }
+  .number {
+    font-size: 18px !important;
   }
   #advantages li p {
     font-size: 14px !important;
