@@ -52,7 +52,7 @@ body {
 
 #topnav > div:nth-child(1) {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 #topnav #language {
@@ -73,7 +73,8 @@ body {
   font-size: 13px;
 }
 
-#topnav > div:nth-child(1):after, #language:before {
+#topnav > div:nth-child(1):after,
+#language:before {
   display: block;
   height: 16px;
   border-left: 1px solid;
@@ -171,7 +172,7 @@ nav ul li:hover {
 }
 
 .active {
-  background: #F2F3F5 !important;
+  background: #f2f3f5 !important;
 }
 
 .caret-rotate {
@@ -430,7 +431,8 @@ nav > a > button,
   z-index: 40;
 }
 
-main {
+main,
+#advantages {
   background: #f4c900;
   background-position: 0 0, 0 0;
   background-size: auto, auto;
@@ -481,7 +483,7 @@ main {
   width: 550px;
 }
 
-.right {
+.right:not(#out .right) {
   max-width: 600px;
 }
 
@@ -489,7 +491,7 @@ main {
   background: #f4c900;
   background-position: 0 0, 0 0;
   background-size: auto, auto;
-  padding: 100px 0px;
+  padding: 50px 0px;
   color: #101010;
   position: relative;
   overflow: hidden;
@@ -504,7 +506,8 @@ main {
   justify-content: space-between;
   width: 100%;
   max-width: 1400px;
-  padding: 0 0px 0 80px;
+  padding: 10px 0 0 60px;
+  min-height: 450px;
 }
 
 #out .bottom {
@@ -539,12 +542,16 @@ main {
 #out .right {
   width: 100%;
   position: relative;
-  min-width: 620px;
+  width: 700px;
   overflow: hidden;
+  margin-right: 20px;
+  max-height: 450px;
+  height: 450px;
 }
 
 #out .left h2 {
   font-size: 46px;
+  font-weight: 500;
 }
 
 #out .left > p {
@@ -557,7 +564,114 @@ main {
   justify-content: flex-start !important;
 }
 
-#advantages {
+.swiper-slide {
+  background: white;
+  border-radius: 10px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+  display: flex;
+  flex-direction: column;
+  color: #555555;
+  overflow-y: scroll;
+}
+
+.swiper-slide::-webkit-scrollbar {
+  width: 15px;
+}
+
+.swiper-slide::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.swiper-slide::-webkit-scrollbar-thumb {
+  background-color: #eeeeee;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.person {
+  display: flex;
+  gap: 10px;
+  padding: 6px 0 10px 15px;
+}
+
+.person_img {
+  background: #0166ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.person p {
+  font-size: 14px;
+}
+
+.name_stars {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.person .name_stars img {
+  width: 70px;
+}
+
+.review {
+  font-size: 15px;
+  text-align: left;
+  font-weight: 500 !important;
+  padding: 0 15px 6px 15px;
+}
+
+.swiper-slide:nth-child(1) .person_img {
+  background-image: url(./images/parents/p1.jpeg);
+}
+.swiper-slide:nth-child(2) .person_img {
+  background-image: url(./images/parents/p7.jpg);
+}
+.swiper-slide:nth-child(3) .person_img {
+  background-image: url(./images/parents/p6.jpeg);
+}
+.swiper-slide:nth-child(4) .person_img {
+  background-image: url(./images/parents/p10.jpg);
+}
+.swiper-slide:nth-child(5) .person_img {
+  background-image: url(./images/parents/p9.jpg);
+}
+.swiper-slide:nth-child(6) .person_img {
+  background-image: url(./images/parents/p2.jpeg);
+}
+.swiper-slide:nth-child(7) .person_img {
+  background-image: url(./images/parents/p11.jpg);
+}
+.swiper-slide:nth-child(8) .person_img {
+  background-image: url(./images/parents/p4.jpeg);
+}
+.swiper-slide:nth-child(9) .person_img {
+  background-image: url(./images/parents/p5.jpeg);
+}
+.swiper-slide:nth-child(10) .person_img {
+  background-image: url(./images/parents/p12.jpg);
+}
+
+.advantages {
   padding: 80px 30px;
   display: flex;
   justify-content: center;
@@ -565,17 +679,20 @@ main {
   gap: 150px;
   margin: 0 auto;
   position: relative;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  background: white;
 }
 
-#advantages .right {
+.advantages .right {
   position: relative;
 }
 
-#advantages .right img:nth-child(1) {
+.advantages .right img:nth-child(1) {
   width: 400px;
 }
 
-#advantages .right img:nth-child(2) {
+.advantages .right img:nth-child(2) {
   position: absolute;
   right: -2rem;
   bottom: -2rem;
@@ -592,31 +709,31 @@ main {
   }
 }
 
-#advantages .left h2 {
+.advantages .left h2 {
   font-size: 50px;
 }
 
-#advantages .left ul {
+.advantages .left ul {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-#advantages .left li {
+.advantages .left li {
   width: 100%;
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-#advantages .left li h3 {
+.advantages .left li h3 {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;
 }
 
-#advantages .left li p {
+.advantages .left li p {
   margin-top: 10px;
   font-size: 14px;
   color: #7d7d7d;
@@ -635,8 +752,7 @@ main {
   background-size: contain;
 }
 
-#top_cor h2,
-#testimonials h2 {
+#top_cor h2 {
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 30px;
@@ -910,147 +1026,8 @@ main {
   background-image: url(./images/tutors/eshka.jpg);
 }
 
-#bottom_cor_ .pr {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  gap: 20px;
-}
-
-#bottom_cor_ button {
-  padding: 12px 35px;
-  background: #f4c900;
-  color: #ffff;
-  width: fit-content;
-}
-
-#testimonials {
-  max-width: 1400px;
-  margin: 0 auto;
-  position: absolute;
-  right: -50%;
-  top: 50%;
-  transform: translateY(-50%);
-  overflow: hidden;
-}
-
-.owl-nav {
-  display: none;
-}
-
-#testimonials h2 {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.owl-stage {
-  display: flex;
-  gap: 0px;
-}
-
-.box-area {
-  padding: 30px;
-  position: relative;
-  display: block;
-  background: #ffff;
-  text-align: left;
-  min-height: 100%;
-  max-width: 450px;
-  width: 450px;
-}
-
-.box-area > img {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.testi_star {
-  display: flex;
-  gap: 5px;
-  list-style: none;
-  justify-content: center;
-}
-
-.box-area h5 {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.content {
-  margin: 20px 0;
-  color: #555555;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: -webkit-box !important;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
-  white-space: normal;
-}
-
-.name_img {
-  display: flex;
-  gap: 10px;
-}
-
-.box-area .img-area {
-  width: 50px;
-  height: 50px;
-  top: -40px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  border-radius: 50px;
-  background: #ffffff;
-}
-
-.box-area > ul:nth-child(1) {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  list-style: none;
-}
-
-#testimonials img {
-  border-radius: 50px;
-}
-
-#testimonials .owl-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-}
-
 .hide {
   display: none;
-}
-
-#testimonials .owl-prev,
-#testimonials .owl-next {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  color: #0a69ed;
-  border-radius: 50%;
-  text-align: center;
-  background: #fff;
-  position: absolute;
-}
-#testimonials .owl-prev {
-  left: -60px;
-  top: -30px;
-}
-#testimonials .owl-next {
-  right: -60px;
-  top: -30px;
-}
-
-.owl-stage-outer {
-  padding: 50px 0;
 }
 
 #ceo {
@@ -1328,7 +1305,7 @@ footer #right > div p:nth-child(2) {
   #out .inner {
     justify-content: center;
     margin: 0 auto;
-    gap: 100px;
+    gap: 50px;
   }
   .main .left {
     max-width: 700px;
@@ -1358,6 +1335,9 @@ footer #right > div p:nth-child(2) {
   .main .right > img {
     height: auto;
     max-width: 100%;
+  }
+  #out .inner {
+    padding: 0 0px 0 50px;
   }
   #courses ul {
     grid-template-columns: repeat(2, 400px);
@@ -1400,6 +1380,10 @@ footer #right > div p:nth-child(2) {
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
   }
+  .advantages {
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+  }
   .main h2 {
     font-size: 50px !important;
   }
@@ -1414,28 +1398,17 @@ footer #right > div p:nth-child(2) {
     row-gap: 50px;
   }
   #out .left {
-    padding: 0 80px;
-  }
-  .owl-stage-outer {
-    padding: 0;
-  }
-  .box-area {
-    max-width: 100%;
-    width: 100%;
+    padding: 0 50px;
   }
   #out .right {
-    height: 300px;
     min-width: 100%;
   }
-  #testimonials {
-    right: 0;
-  }
-  #advantages {
+  .advantages {
     flex-direction: column;
     gap: 70px;
     padding: 50px 40px 80px 40px;
   }
-  #advantages .right img:nth-child(1) {
+  .advantages .right img:nth-child(1) {
     height: auto;
     max-width: 100%;
   }
@@ -1519,10 +1492,6 @@ footer #right > div p:nth-child(2) {
   #courses li {
     margin: 0 auto;
   }
-  #testimonials {
-    width: 100%;
-    height: 100%;
-  }
   .drop li {
     width: 100%;
   }
@@ -1533,6 +1502,12 @@ footer #right > div p:nth-child(2) {
   }
   footer > ul {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #out .right {
+    width: 100%;
   }
 }
 
@@ -1547,7 +1522,8 @@ footer #right > div p:nth-child(2) {
   #topnav #middle {
     display: none;
   }
-  #topnav > div:nth-child(1):after, #language:before {
+  #topnav > div:nth-child(1):after,
+  #language:before {
     display: none;
   }
   .main {
@@ -1583,7 +1559,7 @@ footer #right > div p:nth-child(2) {
     padding: 50px 20px 50px 20px;
   }
   #out .left {
-    padding: 0 30px;
+    padding-right: 0;
   }
   #out .bottom {
     gap: 50px;
@@ -1591,20 +1567,31 @@ footer #right > div p:nth-child(2) {
   #out .left h2 {
     font-size: max(3vw, 6vw);
   }
+  .swiper-slide {
+    overflow: hidden !important;
+  }
+  .review {
+    padding-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 7;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
   #team h2 {
     font-size: 35px;
   }
   #team .left img {
     display: none;
   }
-  #advantages .left h2 {
+  .advantages .left h2 {
     margin-bottom: 40px;
   }
-  #advantages {
+  .advantages {
     padding: 50px 30px 70px 30px;
     gap: 50px;
   }
-  #advantages .left h2 br {
+  .advantages .left h2 br {
     display: none;
   }
   #team .mentor {
@@ -1665,7 +1652,7 @@ footer #right > div p:nth-child(2) {
 }
 
 @media screen and (max-width: 600px) {
-  #advantages .right img:nth-child(2) {
+  .advantages .right img:nth-child(2) {
     width: 150px;
     right: 0rem;
     bottom: -1rem;
@@ -1732,7 +1719,7 @@ footer #right > div p:nth-child(2) {
   #ceo .left p {
     width: 100%;
   }
-  #advantages .left h2 {
+  .advantages .left h2 {
     font-size: max(3vw, 7.5vw);
   }
   footer > ul {
@@ -1749,6 +1736,9 @@ footer #right > div p:nth-child(2) {
   }
   #topnav > div #number:nth-child(1):before {
     display: none;
+  }
+  .language {
+    margin-right: 10px;
   }
   nav {
     width: 100%;
@@ -1784,7 +1774,30 @@ footer #right > div p:nth-child(2) {
   .main .left img {
     display: none;
   }
-  #advantages .right img:nth-child(2) {
+  #out .left {
+    padding: 0 20px;
+  }
+  #out .left button {
+    padding: 15px 30px;
+  }
+  #out .right {
+    max-height: 250px !important;
+    padding: 0 10px;
+    margin: 0;
+  }
+  .swiper-slide {
+    height: 100% !important;
+    overflow-y: hidden !important;
+  }
+  .review {
+    padding-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 8;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  .advantages .right img:nth-child(2) {
     width: 120px;
   }
   #top_cor h2 {
@@ -1824,16 +1837,16 @@ footer #right > div p:nth-child(2) {
   #out .left h2 {
     font-size: max(3vw, 8vw);
   }
-  #advantages {
+  .advantages {
     padding: 50px 15px 70px 15px;
   }
-  #advantages li h3 {
-    font-size: 15px !important;
+  .advantages li h3 {
+    font-size: 14px !important;
   }
   .number {
     font-size: 18px !important;
   }
-  #advantages li p {
+  .advantages li p {
     font-size: 14px !important;
   }
   #team .left > img {
@@ -1860,16 +1873,5 @@ footer #right > div p:nth-child(2) {
   footer > ul {
     flex-direction: column !important;
     margin-bottom: 30px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .owl-nav {
-    display: none;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .owl-nav {
-    display: none;
   }
 }

@@ -58,28 +58,6 @@ function set_off() {
   menu_inn.style.display = "none";
 }
 
-$(".testmonial_slider_area").owlCarousel({
-  autoplay: true,
-  slideSpeed: 5000,
-  items: 3,
-  loop: true,
-  nav: true,
-  navText: [``, ``],
-  margin: 30,
-  dots: true,
-  responsive: {
-    320: {
-      items: 1,
-    },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
-
 btn_dropdown_main.forEach((w) => {
   w.addEventListener("click", (e) => {
     let text_ul = e.target.parentElement.children[1];
@@ -134,18 +112,6 @@ const arm = {
     students:
       "<span style='font-weight: 700'>1000-ից</span> ավել ուրախ ուսանողներ",
     join: "Գրանցվել բաց դասին",
-    buttom: {
-      title: [
-        "Անհատականացված ուսուցում",
-        "Պրոֆեսինալ թիմ",
-        "Մասնագիտական վերապատրաստում",
-      ],
-      nkar: [
-        "Յուրաքանչյուր ուսանող ստանում է անհատական մոտեցում",
-        "Հավաստագրված մասնագետների կողմից ստեղծված դասընթացներ և փորձ",
-        "KY ակադեմիայի միջոցով մասնագետները կարող են իրենց գիտելիքների բացերը և բավարարել կրթական կարիքները",
-      ],
-    },
   },
   advantages: {
     heading:
@@ -254,22 +220,10 @@ const eng = {
     learn_more: "Learn More",
   },
   out: {
-    learner: "Thought on<br> us",
+    learner: "Thought about us",
     early: "Its never too early",
     students: "<span style='font-weight: 700'>+ 1000k </span> Happy Students",
     join: "Join for free",
-    buttom: {
-      title: [
-        "Personalized Learning",
-        "Professional team",
-        "Professional training",
-      ],
-      nkar: [
-        "Each student receives an individual approach",
-        "Courses and Experience Created by Certified Professionals",
-        "Through KY Academy, professionals can fill their knowledge gaps and meet educational needs",
-      ],
-    },
   },
   advantages: {
     heading: "<h2>What <span class='never'>results</span> we<br> provide</h2>",
@@ -375,23 +329,11 @@ const rus = {
     learn_more: "Подробнее",
   },
   out: {
-    learner: "Отзывы о<br> нас",
+    learner: "Отзывы о нас",
     early: "Никогда не рано",
     students:
       "<span style='font-weight: 700'>+ 1000 тыс. </span> счастливых студентов",
     join: "Присоединиться бесплатно",
-    buttom: {
-      title: [
-        "Индивидуальное обучение",
-        "Профессиональная команда",
-        "Профессиональная подготовка",
-      ],
-      nkar: [
-        "Каждый ученик получает индивидуальный подход",
-        "Курсы и опыт, созданные сертифицированными профессионалами",
-        "Благодаря KY Academy профессионалы могут заполнить пробелы в своих знаниях и удовлетворить образовательные потребности",
-      ],
-    },
   },
   advantages: {
     heading:
@@ -682,12 +624,6 @@ function armenianLan(
       te.classList.remove("hide");
     }
   });
-  out_bottom[0].childNodes[3].innerText = arm.out.buttom.title[0];
-  out_bottom[1].childNodes[3].innerText = arm.out.buttom.title[1];
-  out_bottom[2].childNodes[3].innerText = arm.out.buttom.title[2];
-  out_bottom[0].childNodes[5].innerText = arm.out.buttom.nkar[0];
-  out_bottom[1].childNodes[5].innerText = arm.out.buttom.nkar[1];
-  out_bottom[2].childNodes[5].innerText = arm.out.buttom.nkar[2];
 
   //advatages
   advantages_title.outerHTML = arm.advantages.heading;
@@ -827,12 +763,6 @@ function englishLan(
       te.classList.remove("hide");
     }
   });
-  out_bottom[0].childNodes[3].innerText = eng.out.buttom.title[0];
-  out_bottom[1].childNodes[3].innerText = eng.out.buttom.title[1];
-  out_bottom[2].childNodes[3].innerText = eng.out.buttom.title[2];
-  out_bottom[0].childNodes[5].innerText = eng.out.buttom.nkar[0];
-  out_bottom[1].childNodes[5].innerText = eng.out.buttom.nkar[1];
-  out_bottom[2].childNodes[5].innerText = eng.out.buttom.nkar[2];
 
   //advatages
   advantages_title.outerHTML = eng.advantages.heading;
@@ -972,12 +902,6 @@ function russianLan(
       te.classList.remove("hide");
     }
   });
-  out_bottom[0].childNodes[3].innerText = rus.out.buttom.title[0];
-  out_bottom[1].childNodes[3].innerText = rus.out.buttom.title[1];
-  out_bottom[2].childNodes[3].innerText = rus.out.buttom.title[2];
-  out_bottom[0].childNodes[5].innerText = rus.out.buttom.nkar[0];
-  out_bottom[1].childNodes[5].innerText = rus.out.buttom.nkar[1];
-  out_bottom[2].childNodes[5].innerText = rus.out.buttom.nkar[2];
 
   //advatages
   advantages_title.outerHTML = rus.advantages.heading;
