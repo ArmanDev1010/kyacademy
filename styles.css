@@ -483,6 +483,10 @@ main,
   width: 550px;
 }
 
+.main .right > img:nth-child(2) {
+  display: none;
+}
+
 .right:not(#out .right) {
   max-width: 600px;
 }
@@ -506,7 +510,7 @@ main,
   justify-content: space-between;
   width: 100%;
   max-width: 1400px;
-  padding: 10px 0 0 60px;
+  padding: 15px 0 0 60px;
   min-height: 450px;
 }
 
@@ -688,16 +692,13 @@ main,
   position: relative;
 }
 
-.advantages .right img:nth-child(1) {
+.advantages .right img:nth-child(1),
+.advantages .right img:nth-child(2) {
   width: 350px;
 }
 
 .advantages .right img:nth-child(2) {
-  position: absolute;
-  right: -2rem;
-  bottom: -2rem;
-  width: 200px;
-  animation: rotation 16s infinite linear;
+  display: none;
 }
 
 @keyframes rotation {
@@ -1376,6 +1377,8 @@ footer #right > div p:nth-child(2) {
     position: relative;
     gap: 50px;
     padding-top: 50px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     flex-direction: column;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
@@ -1384,11 +1387,20 @@ footer #right > div p:nth-child(2) {
     border-top-left-radius: 0%;
     border-top-right-radius: 0%;
   }
+  .left {
+    padding: 0 20px;
+  }
   .main h2 {
     font-size: 50px !important;
   }
+  .main .right > img:nth-child(1) {
+    display: none;
+  }
+  .main .right > img:nth-child(2) {
+    display: block;
+  }
   #out {
-    padding: 10px 0 60px 0;
+    padding: 0px 0 10px 0;
     gap: 30px;
   }
   #out .inner {
@@ -1409,8 +1421,12 @@ footer #right > div p:nth-child(2) {
     padding: 50px 40px 80px 40px;
   }
   .advantages .right img:nth-child(1) {
+    display: none;
+  }
+  .advantages .right img:nth-child(2) {
     height: auto;
     max-width: 100%;
+    display: block;
   }
 }
 
@@ -1652,11 +1668,6 @@ footer #right > div p:nth-child(2) {
 }
 
 @media screen and (max-width: 600px) {
-  .advantages .right img:nth-child(2) {
-    width: 150px;
-    right: 0rem;
-    bottom: -1rem;
-  }
   #courses ul {
     grid-template-columns: repeat(1, 1fr);
     gap: 50px;
@@ -1766,7 +1777,7 @@ footer #right > div p:nth-child(2) {
     gap: 30px;
   }
   .main {
-    padding: 50px 20px 50px 20px;
+    padding: 30px 0;
   }
   .main h2 br {
     display: block;
@@ -1796,9 +1807,6 @@ footer #right > div p:nth-child(2) {
     -webkit-line-clamp: 8;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-  }
-  .advantages .right img:nth-child(2) {
-    width: 120px;
   }
   #top_cor h2 {
     margin-bottom: 20px;

@@ -220,7 +220,7 @@ const eng = {
     learn_more: "Learn More",
   },
   out: {
-    learner: "Thought about us",
+    learner: "Thoughts on us",
     early: "Its never too early",
     students: "<span style='font-weight: 700'>+ 1000k </span> Happy Students",
     join: "Join for free",
