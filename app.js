@@ -148,10 +148,7 @@ const arm = {
     tutor_name: [
       "Արման Մինասյան",
       "Սամվել Ջաբաղյան",
-      "Գարեգին Խաչատրյան",
-      "Եկատերինա Հակոբյան",
     ],
-    learn_more: "Իմացեք ավելին",
   },
   ceo: {
     heading: "Ինչպե՞ս սկսվեց</br> ամեն ինչ",
@@ -189,7 +186,7 @@ const arm = {
   footer: {
     left: [
       "© 2023, © «KY academy» |, Բոլոր իրավունքները պահպանված են",
-      'Կայքի ձևավորումը՝ <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/">@armandev10</a>',
+      'Կայքի ձևավորումը՝ <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/" target="_blank">@armandev10</a>',
     ],
     ul: {
       courses: [
@@ -254,7 +251,6 @@ const eng = {
       "<span style='font-size: 24px; font-weight: 700'>32.</span>000 amd",
     ],
     tutor_name: ["Arman Minasyan", "Samvel Jabaxyan"],
-    learn_more: "Learn More",
   },
   ceo: {
     heading: "How did it all start?",
@@ -292,7 +288,7 @@ const eng = {
   footer: {
     left: [
       '© 2023, © "KY academy" |, All rights reserved',
-      'Designed by <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/">@armandev10</a>',
+      'Designed by <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/" target="_blank">@armandev10</a>',
     ],
     ul: {
       courses: ["Courses", "Your Business from 0", "Jurisprudence"],
@@ -355,7 +351,6 @@ const rus = {
       "<span style='font-size: 24px; font-weight: 700'>32.</span>000 драм",
     ],
     tutor_name: ["Арман Минасян", "Самвел Джабакян"],
-    learn_more: "Узнать больше",
   },
   ceo: {
     heading: "С чего все началось?",
@@ -393,7 +388,7 @@ const rus = {
   footer: {
     left: [
       '© 2023, © "KY academy" |, Все права защищены',
-      'Дизайн сайта <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/">@armandev10</a>',
+      'Дизайн сайта <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/" target="_blank">@armandev10</a>',
     ],
     ul: {
       courses: ["Курсы", "Ваш бизнес с 0", "Юриспруденция"],
@@ -411,11 +406,9 @@ function whatLan() {
     lists_btn = document.querySelector("#lists button"),
     main = document.querySelector(".main .left"),
     out = document.querySelector("#out .left"),
-    out_bottom = document.querySelectorAll("#out .bottom li"),
     advantages_title = document.querySelector("#advantages h2"),
     advantages_heading = document.querySelectorAll("#advantages li h3"),
     advantages_paragraph = document.querySelectorAll("#advantages li p"),
-    advantages_img = document.querySelector("#advantages #its"),
     testi = document.querySelectorAll(".testi"),
     courses_top = document.querySelector("#courses #top_cor"),
     courses_li = document.querySelectorAll("#courses ul li"),
@@ -439,7 +432,6 @@ function whatLan() {
       lists_btn,
       main,
       out,
-      out_bottom,
       advantages_title,
       advantages_heading,
       advantages_paragraph,
@@ -466,7 +458,6 @@ function whatLan() {
       lists_btn,
       main,
       out,
-      out_bottom,
       advantages_title,
       advantages_heading,
       advantages_paragraph,
@@ -493,7 +484,6 @@ function whatLan() {
       lists_btn,
       main,
       out,
-      out_bottom,
       advantages_title,
       advantages_heading,
       advantages_paragraph,
@@ -520,7 +510,6 @@ function whatLan() {
       lists_btn,
       main,
       out,
-      out_bottom,
       advantages_title,
       advantages_heading,
       advantages_paragraph,
@@ -551,7 +540,6 @@ function armenianLan(
   lists_btn,
   main,
   out,
-  out_bottom,
   advantages_title,
   advantages_heading,
   advantages_paragraph,
@@ -628,8 +616,6 @@ function armenianLan(
   tutor[1].innerText = arm.courses.tutor_name[1];
   pr[0].childNodes[1].innerHTML = arm.courses.monthly[0];
   pr[1].childNodes[1].innerHTML = arm.courses.monthly[1];
-  pr[0].childNodes[3].innerHTML = arm.courses.learn_more;
-  pr[1].childNodes[3].innerHTML = arm.courses.learn_more;
 
   //ceo
   ceo.childNodes[1].childNodes[1].innerHTML = arm.ceo.heading;
@@ -690,7 +676,6 @@ function englishLan(
   lists_btn,
   main,
   out,
-  out_bottom,
   advantages_title,
   advantages_heading,
   advantages_paragraph,
@@ -767,8 +752,6 @@ function englishLan(
   tutor[1].innerText = eng.courses.tutor_name[1];
   pr[0].childNodes[1].innerHTML = eng.courses.monthly[0];
   pr[1].childNodes[1].innerHTML = eng.courses.monthly[1];
-  pr[0].childNodes[3].innerHTML = eng.courses.learn_more;
-  pr[1].childNodes[3].innerHTML = eng.courses.learn_more;
 
   //ceo
   ceo.childNodes[1].childNodes[1].innerHTML = eng.ceo.heading;
@@ -829,7 +812,6 @@ function russianLan(
   lists_btn,
   main,
   out,
-  out_bottom,
   advantages_title,
   advantages_heading,
   advantages_paragraph,
@@ -906,8 +888,6 @@ function russianLan(
   tutor[1].innerText = rus.courses.tutor_name[1];
   pr[0].childNodes[1].innerHTML = rus.courses.monthly[0];
   pr[1].childNodes[1].innerHTML = rus.courses.monthly[1];
-  pr[0].childNodes[3].innerHTML = rus.courses.learn_more;
-  pr[1].childNodes[3].innerHTML = rus.courses.learn_more;
 
   //ceo
   ceo.childNodes[1].childNodes[1].innerHTML = rus.ceo.heading;

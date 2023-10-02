@@ -225,14 +225,6 @@ nav > a > button:hover,
   box-shadow: #222 4px 4px 0 0;
 }
 
-#bottom_cor_ button:hover {
-  transform: scale(1.02);
-}
-
-#bottom_cor_ button:active {
-  transform: translate(2px, 2px);
-}
-
 .btns button:active,
 #out .left button:active,
 nav > a > button:active,
@@ -243,7 +235,6 @@ nav > a > button:active,
 
 nav > a > button,
 #lists button,
-#bottom_cor_ button,
 #out .left button {
   background: #ffffff;
   color: #f4c900;
@@ -994,6 +985,10 @@ main,
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.pr {
+  margin-top: 20px;
 }
 
 .tutor {
