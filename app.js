@@ -136,10 +136,7 @@ const arm = {
     heading: "Մեր Դասընթացները",
     paragraph: "2 և ավելի ուսանող գրանցելու դեպքում գործում է զեղչ",
     pop: ["ԲԵՍԹՍԵԼԵՐ"],
-    title: [
-      "Սեփական բիզնեսը 0-ից",
-      "Հետաքրքրաշարժ իրավունք",
-    ],
+    title: ["Սեփական բիզնեսը 0-ից", "Հետաքրքրաշարժ իրավունք"],
     sub_title: [
       "Իմացեք քայլ առ քայլ գործընթաց, որը կարող եք օգտագործել սկսելու ձեր սեփական բիզնեսը 0-ից",
       "Իմացե'ք` ինչպես գտնել և հասկանալ օրենքը, ճանաչե'ք Ձեր իրավունքները, որ լինեք պաշտպանված",
@@ -247,10 +244,7 @@ const eng = {
     heading: "Our Courses",
     paragraph: "If you register 2 or more students, there is a discount",
     pop: ["BESTSELLER"],
-    title: [
-      "Your Business from 0",
-      "Jurisprudence",
-    ],
+    title: ["Your Business from 0", "Jurisprudence"],
     sub_title: [
       "Learn a step-by-step process you can use to start your own business from 0",
       "Learn how to find and understand the law, know your rights and to be protected",
@@ -259,10 +253,7 @@ const eng = {
       "<span style='font-size: 24px; font-weight: 700'>35.</span>000 amd",
       "<span style='font-size: 24px; font-weight: 700'>32.</span>000 amd",
     ],
-    tutor_name: [
-      "Arman Minasyan",
-      "Samvel Jabaxyan",
-    ],
+    tutor_name: ["Arman Minasyan", "Samvel Jabaxyan"],
     learn_more: "Learn More",
   },
   ceo: {
@@ -304,11 +295,7 @@ const eng = {
       'Designed by <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/">@armandev10</a>',
     ],
     ul: {
-      courses: [
-        "Courses",
-        "Your Business from 0",
-        "Jurisprudence",
-      ],
+      courses: ["Courses", "Your Business from 0", "Jurisprudence"],
       about: ["About us", "How did it all start?", "Our Mentors"],
     },
     right: ["Contact", "Phone number", "Social networks"],
@@ -358,10 +345,7 @@ const rus = {
     heading: "Наши Курсы",
     paragraph: "При регистрации 2-х и более студентов действует скидка",
     pop: ["БЕСТСЕЛЛЕР"],
-    title: [
-      "Ваш бизнес с 0",
-      "Юриспруденция",
-    ],
+    title: ["Ваш бизнес с 0", "Юриспруденция"],
     sub_title: [
       "Изучите пошаговый процесс, который вы можете использовать, чтобы начать свой собственный бизнес с нуля",
       "Научитесь находить и понимать закон, знать свои права и защищаться",
@@ -370,10 +354,7 @@ const rus = {
       "<span style='font-size: 24px; font-weight: 700'>35.</span>000 драм",
       "<span style='font-size: 24px; font-weight: 700'>32.</span>000 драм",
     ],
-    tutor_name: [
-      "Арман Минасян",
-      "Самвел Джабакян",
-    ],
+    tutor_name: ["Арман Минасян", "Самвел Джабакян"],
     learn_more: "Узнать больше",
   },
   ceo: {
@@ -415,11 +396,7 @@ const rus = {
       'Дизайн сайта <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/">@armandev10</a>',
     ],
     ul: {
-      courses: [
-        "Курсы",
-        "Ваш бизнес с 0",
-        "Юриспруденция",
-      ],
+      courses: ["Курсы", "Ваш бизнес с 0", "Юриспруденция"],
       about: ["О нас", "С чего все началось?", "Наши Инструктуры"],
     },
     right: ["Контакты", "Номер телефона", "Социальные сети"],
