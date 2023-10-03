@@ -482,11 +482,12 @@ footer #left p:nth-child(5) {
   margin-top: 10px;
 }
 
-footer #left p:nth-child(3),
+footer #left a p,
 footer #left p:nth-child(4) {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #222;
 }
 
 footer #left p:nth-child(5) a {
@@ -526,14 +527,15 @@ footer .title {
 }
 
 footer ol .title a {
-  color: #222 !important;
+  color: #000000 !important;
 }
 
 footer ol li a {
   color: #555555;
 }
 
-footer #right, footer #right #bottom {
+footer #right,
+footer #right #bottom {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -552,8 +554,9 @@ footer #right > div p:nth-child(1) {
   margin-bottom: 5px;
 }
 
-footer #right > div p:nth-child(2) {
+footer #right > div a p {
   font-weight: bold;
+  color: #000 !important;
 }
 
 /**/
