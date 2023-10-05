@@ -136,14 +136,16 @@ const arm = {
     heading: "Մեր Դասընթացները",
     paragraph: "2 և ավելի ուսանող գրանցելու դեպքում գործում է զեղչ",
     pop: ["ԲԵՍԹՍԵԼԵՐ"],
-    title: ["Սեփական բիզնեսը 0-ից", "Հետաքրքրաշարժ իրավունք"],
+    title: ["Սեփական բիզնեսը 0-ից", "Հետաքրքրաշարժ իրավունք", "Կրիպտոաշխարհի բացահայտում"],
     sub_title: [
       "Իմացեք քայլ առ քայլ գործընթաց, որը կարող եք օգտագործել սկսելու ձեր սեփական բիզնեսը 0-ից",
       "Իմացե'ք` ինչպես գտնել և հասկանալ օրենքը, ճանաչե'ք Ձեր իրավունքները, որ լինեք պաշտպանված",
+      "Դասընթացի ընթացքում կանդրադառնանք կրիպտոարժույթների, բլոկչեյն տեխնոլոգիայի և ֆինանսների ապագայի հետաքրքիր աշխարհին"
     ],
     monthly: [
       "<span style='font-size: 24px; font-weight: 700'>35.</span>000 դրամ",
       "<span style='font-size: 24px; font-weight: 700'>32.</span>000 դրամ",
+      "<span style='font-size: 24px; font-weight: 700'>35.</span>000 դրամ",
     ],
     tutor_name: [
       "Արման Մինասյան",
@@ -193,6 +195,7 @@ const arm = {
         "Դասընթացներ",
         "Սեփական բիզնեսը 0-ից",
         "Հետաքրքրաշարժ իրավունք",
+        "Կրիպտոաշխարհի բացահայտում",
       ],
       about: ["Մեր մասին", "Ինչպե՞ս սկսվեց ամեն ինչ", "Մեր Թիմը"],
     },
@@ -241,10 +244,11 @@ const eng = {
     heading: "Our Courses",
     paragraph: "If you register 2 or more students, there is a discount",
     pop: ["BESTSELLER"],
-    title: ["Your Business from 0", "Jurisprudence"],
+    title: ["Your Business from 0", "Jurisprudence", "Discovering the crypto world"],
     sub_title: [
       "Learn a step-by-step process you can use to start your own business from 0",
       "Learn how to find and understand the law, know your rights and to be protected",
+      "During the course, we will look at the exciting world of cryptocurrencies, blockchain technology and the future of finance",
     ],
     monthly: [
       "<span style='font-size: 24px; font-weight: 700'>35.</span>000 amd",
@@ -291,7 +295,7 @@ const eng = {
       'Designed by <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/" target="_blank">@armandev10</a>',
     ],
     ul: {
-      courses: ["Courses", "Your Business from 0", "Jurisprudence"],
+      courses: ["Courses", "Your Business from 0", "Jurisprudence", "Exploring the Crypto World"],
       about: ["About us", "How did it all start?", "Our Mentors"],
     },
     right: ["Contact", "Phone number", "Social networks"],
@@ -341,10 +345,11 @@ const rus = {
     heading: "Наши Курсы",
     paragraph: "При регистрации 2-х и более студентов действует скидка",
     pop: ["БЕСТСЕЛЛЕР"],
-    title: ["Ваш бизнес с 0", "Юриспруденция"],
+    title: ["Ваш бизнес с 0", "Юриспруденция", "Открывая криптомир"],
     sub_title: [
       "Изучите пошаговый процесс, который вы можете использовать, чтобы начать свой собственный бизнес с нуля",
       "Научитесь находить и понимать закон, знать свои права и защищаться",
+      "В ходе курса мы рассмотрим будущее криптовалют, технологии блокчейн и финансов интересный мир"
     ],
     monthly: [
       "<span style='font-size: 24px; font-weight: 700'>35.</span>000 драм",
@@ -391,7 +396,7 @@ const rus = {
       'Дизайн сайта <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/" target="_blank">@armandev10</a>',
     ],
     ul: {
-      courses: ["Курсы", "Ваш бизнес с 0", "Юриспруденция"],
+      courses: ["Курсы", "Ваш бизнес с 0", "Юриспруденция","Изучение криптомира"],
       about: ["О нас", "С чего все началось?", "Наши Инструктуры"],
     },
     right: ["Контакты", "Номер телефона", "Социальные сети"],
@@ -610,12 +615,16 @@ function armenianLan(
   pop[0].innerText = arm.courses.pop[0];
   courses_li[0].childNodes[3].innerText = arm.courses.title[0];
   courses_li[1].childNodes[3].innerText = arm.courses.title[1];
+  courses_li[2].childNodes[3].innerText = arm.courses.title[2];
   courses_li[0].childNodes[5].innerText = arm.courses.sub_title[0];
   courses_li[1].childNodes[5].innerText = arm.courses.sub_title[1];
+  courses_li[2].childNodes[5].innerText = arm.courses.sub_title[2];
   tutor[0].innerText = arm.courses.tutor_name[0];
   tutor[1].innerText = arm.courses.tutor_name[1];
+  tutor[2].innerText = arm.courses.tutor_name[0];
   pr[0].childNodes[1].innerHTML = arm.courses.monthly[0];
   pr[1].childNodes[1].innerHTML = arm.courses.monthly[1];
+  pr[2].childNodes[1].innerHTML = arm.courses.monthly[0];
 
   //ceo
   ceo.childNodes[1].childNodes[1].innerHTML = arm.ceo.heading;
@@ -656,6 +665,8 @@ function armenianLan(
     arm.footer.ul.courses[1];
   footer_ul.childNodes[1].childNodes[5].childNodes[0].innerText =
     arm.footer.ul.courses[2];
+  footer_ul.childNodes[1].childNodes[7].childNodes[0].innerText =
+    arm.footer.ul.courses[3];
   footer_ul.childNodes[3].childNodes[1].childNodes[0].innerText =
     arm.footer.ul.about[0];
   footer_ul.childNodes[3].childNodes[3].childNodes[0].innerText =
@@ -741,17 +752,21 @@ function englishLan(
 
   //courses
   courses_top.childNodes[1].innerText = eng.courses.heading;
-  courses_top.childNodes[1].classList.remove("arm_f");
+  courses_top.childNodes[1].classList.add("arm_f");
   courses_top.childNodes[3].innerText = eng.courses.paragraph;
   pop[0].innerText = eng.courses.pop[0];
   courses_li[0].childNodes[3].innerText = eng.courses.title[0];
   courses_li[1].childNodes[3].innerText = eng.courses.title[1];
+  courses_li[2].childNodes[3].innerText = eng.courses.title[2];
   courses_li[0].childNodes[5].innerText = eng.courses.sub_title[0];
   courses_li[1].childNodes[5].innerText = eng.courses.sub_title[1];
+  courses_li[2].childNodes[5].innerText = eng.courses.sub_title[2];
   tutor[0].innerText = eng.courses.tutor_name[0];
   tutor[1].innerText = eng.courses.tutor_name[1];
+  tutor[2].innerText = eng.courses.tutor_name[0];
   pr[0].childNodes[1].innerHTML = eng.courses.monthly[0];
   pr[1].childNodes[1].innerHTML = eng.courses.monthly[1];
+  pr[2].childNodes[1].innerHTML = eng.courses.monthly[0];
 
   //ceo
   ceo.childNodes[1].childNodes[1].innerHTML = eng.ceo.heading;
@@ -792,6 +807,8 @@ function englishLan(
     eng.footer.ul.courses[1];
   footer_ul.childNodes[1].childNodes[5].childNodes[0].innerText =
     eng.footer.ul.courses[2];
+  footer_ul.childNodes[1].childNodes[7].childNodes[0].innerText =
+    eng.footer.ul.courses[3];
   footer_ul.childNodes[3].childNodes[1].childNodes[0].innerText =
     eng.footer.ul.about[0];
   footer_ul.childNodes[3].childNodes[3].childNodes[0].innerText =
@@ -877,17 +894,21 @@ function russianLan(
 
   //courses
   courses_top.childNodes[1].innerText = rus.courses.heading;
-  courses_top.childNodes[1].classList.remove("arm_f");
+  courses_top.childNodes[1].classList.add("arm_f");
   courses_top.childNodes[3].innerText = rus.courses.paragraph;
   pop[0].innerText = rus.courses.pop[0];
   courses_li[0].childNodes[3].innerText = rus.courses.title[0];
   courses_li[1].childNodes[3].innerText = rus.courses.title[1];
+  courses_li[2].childNodes[3].innerText = rus.courses.title[2];
   courses_li[0].childNodes[5].innerText = rus.courses.sub_title[0];
   courses_li[1].childNodes[5].innerText = rus.courses.sub_title[1];
+  courses_li[2].childNodes[5].innerText = rus.courses.sub_title[2];
   tutor[0].innerText = rus.courses.tutor_name[0];
   tutor[1].innerText = rus.courses.tutor_name[1];
+  tutor[2].innerText = rus.courses.tutor_name[0];
   pr[0].childNodes[1].innerHTML = rus.courses.monthly[0];
   pr[1].childNodes[1].innerHTML = rus.courses.monthly[1];
+  pr[2].childNodes[1].innerHTML = rus.courses.monthly[0];
 
   //ceo
   ceo.childNodes[1].childNodes[1].innerHTML = rus.ceo.heading;
@@ -928,6 +949,8 @@ function russianLan(
     rus.footer.ul.courses[1];
   footer_ul.childNodes[1].childNodes[5].childNodes[0].innerText =
     rus.footer.ul.courses[2];
+  footer_ul.childNodes[1].childNodes[7].childNodes[0].innerText =
+    rus.footer.ul.courses[3];
   footer_ul.childNodes[3].childNodes[1].childNodes[0].innerText =
     rus.footer.ul.about[0];
   footer_ul.childNodes[3].childNodes[3].childNodes[0].innerText =

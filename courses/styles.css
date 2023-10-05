@@ -596,20 +596,8 @@ footer #right > div a p {
 .rights {
   background: url(../images/ira.jpg) no-repeat center center/cover;
 }
-.marketing {
-  background: url(../images/mar.jpg) no-repeat center center/cover;
-}
-.soft {
-  background: url(../images/fin.png) no-repeat center center/cover;
-}
-.finance {
-  background: url(../images/sof.jpg) no-repeat center center/cover;
-}
-.conflict {
-  background: url(../images/conn.png) no-repeat center center/cover;
-}
-.blogging {
-  background: url(../images/bj.png) no-repeat center center/cover;
+.crypto {
+  background: url(../images/fin.png) no-repeat center center/cover !important;
 }
 .right_section {
   position: absolute;
@@ -699,15 +687,6 @@ footer #right > div a p {
 }
 .garegin {
   background: url(../images/tutors/garegin.jpeg) no-repeat center center / cover;
-}
-.grisha {
-  background: url(../images/tutors/grisha.jpeg) no-repeat center center / cover;
-}
-.anna {
-  background: url(../images/tutors/esim.jpg) no-repeat center center / cover;
-}
-.ekaterina {
-  background: url(../images/tutors/eshka.jpg) no-repeat center center / cover;
 }
 .left_ {
   padding: 0 10px 10px 0;

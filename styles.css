@@ -866,8 +866,8 @@ main,
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(2, 400px);
-  gap: 40px;
+  grid-template-columns: repeat(3, 350px);
+  gap: 30px;
 }
 
 #courses a {
@@ -878,7 +878,7 @@ main,
 #courses li {
   list-style: none;
   background: #ffff !important;
-  padding: 16px;
+  padding: 16px 0;
   padding-bottom: 20px;
   border-radius: 40px;
   width: 100%;
@@ -897,13 +897,6 @@ main,
 }
 #courses a:nth-child(3) li .course_image {
   background-image: url(./images/fin.png);
-}
-#courses a:nth-child(4) li .course_image {
-  background-image: url(./images/sof.jpg);
-}
-
-#courses a:nth-child(5) li .course_image {
-  background-image: url(./images/conn.png);
 }
 
 .course_image_parent {
@@ -1009,17 +1002,11 @@ main,
 }
 
 #courses a:nth-child(1) li .tutor_image,
-#courses a:nth-child(4) li .tutor_image {
+#courses a:nth-child(3) li .tutor_image {
   background-image: url(./images/tutors/armant.jpeg);
 }
 #courses a:nth-child(2) li .tutor_image {
   background-image: url(./images/tutors/samvel.jpeg);
-}
-#courses a:nth-child(3) li .tutor_image {
-  background-image: url(./images/tutors/garegin.jpeg);
-}
-#courses a:nth-child(5) .tutor_image {
-  background-image: url(./images/tutors/eshka.jpg);
 }
 
 .hide {
