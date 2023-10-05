@@ -933,6 +933,7 @@ footer #right > div a p {
   background: transparent !important;
   border-bottom: 0 !important;
   cursor: pointer;
+  text-align: left;
 }
 #iqfo {
   padding: 0;
@@ -1278,7 +1279,7 @@ footer #right > div a p {
     margin: 0 10px;
     width: 100% !important;
   }
-  .drop button {
+  .drop > button {
     padding: 9px 15px;
     font-size: 16px;
   }
@@ -1292,8 +1293,8 @@ footer #right > div a p {
   ._section h2:not(.btn_dropdown_main h2) {
     font-size: 18px;
   }
-  .btn_dropdown_main h2 {
-    font-size: 13px !important;
+  .btn_dropdown h2 {
+    font-size: 14px !important;
   }
   ._section p {
     font-size: 15px;
@@ -1307,5 +1308,30 @@ footer #right > div a p {
   }
   #b > p {
     width: fit-content;
+  }
+}
+@media screen and (max-width: 500px) {
+  .btn_dropdown_main {
+    padding: 9px;
+  }
+  .btn_dropdown_main > h2 {
+    font-size: 14px !important;
+  }
+  .btn_dropdown {
+    padding: 5px;
+  }
+  .btn_dropdown h2 {
+    font-size: 12px !important;
+  }
+  ._section li svg {
+    min-width: 20px !important;
+    width: 20px;
+  }
+  .drop > li ul li {
+    padding: 0px;
+  }
+  .show {
+    font-size: 12px !important;
+    padding: 0 5px !important;
   }
 }
