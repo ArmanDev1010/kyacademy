@@ -493,7 +493,7 @@ main,
   background-image: url(./images/noise.png), linear-gradient(#f4c900, #f4c900);
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 70px;
 }
 
 #out .inner {
@@ -505,43 +505,14 @@ main,
   min-height: 450px;
 }
 
-#out .bottom {
-  display: none;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
-  padding: 0 30px;
-}
-
-#out .bottom img {
-  width: 106px;
-}
-
-#out .bottom li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 300px;
-  text-align: center;
-}
-
-#out .bottom h3 {
-  font-weight: 600;
-}
-
-#out .bottom p {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
 #out .right {
   width: 100%;
   position: relative;
   width: 700px;
   overflow: hidden;
   margin-right: 20px;
-  max-height: 450px;
-  height: 450px;
+  max-height: 470px;
+  height: 470px;
 }
 
 #out .left h2 {
@@ -559,6 +530,31 @@ main,
   justify-content: flex-start !important;
 }
 
+/* #out .bottom {
+  padding: 0 60px;
+}
+
+#out .bottom > div:nth-child(1) {
+  grid-column-gap: 32px;
+  align-items: center;
+  -webkit-column-gap: 32px;
+  column-gap: 32px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  position: relative;
+}
+
+#out .bottom > div:nth-child(1) h3 {
+  font-size: 22px;
+}
+
+#out .bottom > div:nth-child(1):after, #out .bottom > div:nth-child(1):before {
+  background-color: hsla(0,0%,100%,.24);
+  content: "";
+  height: 1px;
+  width: 100%;
+} */
+
 .swiper-slide {
   background: white;
   border-radius: 10px;
@@ -569,6 +565,8 @@ main,
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  max-height: 450px;
+  overflow-y: visible;
 }
 
 .swiper-slide {
@@ -595,6 +593,14 @@ main,
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
+}
+
+.swiper-pagination {
+  bottom: -1rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
 }
 
 .person {
@@ -1578,9 +1584,6 @@ footer #right > div a p {
   #out .left {
     padding-right: 0;
   }
-  #out .bottom {
-    gap: 50px;
-  }
   #out .left h2 {
     font-size: max(3vw, 6vw);
   }
@@ -1800,6 +1803,9 @@ footer #right > div a p {
   .swiper-slide {
     height: 100% !important;
     overflow-y: hidden !important;
+  }
+  .swiper-pagination {
+    display: none;
   }
   .review {
     padding-bottom: 0;
